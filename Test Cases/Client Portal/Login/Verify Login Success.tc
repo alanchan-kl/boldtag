@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Login Success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>00e66a09-29a2-4bf5-b09d-96025a18e218</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.username</defaultValue>
+      <description></description>
+      <id>6bd86716-c9ea-433e-86db-99be6b4f1e4e</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.password</defaultValue>
+      <description></description>
+      <id>37078283-a9be-4b89-baaa-49d10aefd846</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

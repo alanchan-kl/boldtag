@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>sidebar_username</name>
+   <tag></tag>
+   <elementGuidId>287ce4ff-dc41-4654-b1cc-62facc1e1f56</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ng-binding</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;wrapper&quot;)/div[@class=&quot;left side-menu&quot;]/div[@class=&quot;slimScrollDiv&quot;]/div[@class=&quot;sidebar-inner slimscrollleft&quot;]/div[@class=&quot;profile-info&quot;]/div[@class=&quot;col-xs-12&quot;]/div[@class=&quot;profile-text&quot;]/b[@class=&quot;ng-binding&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>
