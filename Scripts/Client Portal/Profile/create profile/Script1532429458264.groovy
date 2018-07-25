@@ -28,5 +28,10 @@ if (GlobalVariable.moduleAccess == false) {
 	WebUI.callTestCase(findTestCase('Client Portal/Module Access/Acess Profile Screen'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
+WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/header_profile'), 2)
+
+WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/button_New Profile'), 2)
+
+WebUI.verifyElementVisible(findTestObject('Client Portal/Profile/Create Profile/label_Profile Name'))
 
 
