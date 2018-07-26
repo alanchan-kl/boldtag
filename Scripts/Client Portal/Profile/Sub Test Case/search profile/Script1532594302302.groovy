@@ -25,6 +25,23 @@ import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+if (GlobalVariable.loginAction == false) {
+	WebUI.callTestCase(findTestCase('Client Portal/Login/Verify Login Success'), [('username') : GlobalVariable.username
+			, ('password') : GlobalVariable.password], FailureHandling.STOP_ON_FAILURE)
+}
+
+if (GlobalVariable.moduleAccess == false) {
+	WebUI.callTestCase(findTestCase('Client Portal/Module Access/Acess Profile Screen'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+
+WebUI.setText(findTestObject('Client Portal/Profile/search_profileName'), profileName)
+
+WebUI.click(findTestObject('Client Portal/Profile/search_profileName'))
+
+WebUI.waitForElementNotVisible(findTestObject('Client Portal/a.Common/popout_msg'), 5)
+
+WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
+
 def verifyRecord = false
 def dateCreated = ''
 //throw new com.kms.katalon.core.exception.StepErrorException('')
@@ -36,7 +53,7 @@ WebElement Table = driver.findElement(By.xpath("//table/tbody"))
 List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 'To calculate no of rows In table'
 rows_count = rows_table.size()
-
+println(rows_count)
 'Loop will execute for all the rows of the table'
 Loop:
 for (row = 0; row < rows_count; row++) {

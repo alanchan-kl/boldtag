@@ -43,13 +43,13 @@ if (WebUI.verifyMatch(serverMsg, msgSuccess, true, FailureHandling.OPTIONAL)) {
 }
 
 if (updateSuccess == true) {
-    WebUI.setText(findTestObject('Client Portal/Profile/search_profileName'), profileName)
+    //WebUI.setText(findTestObject('Client Portal/Profile/search_profileName'), profileName)
 
-    WebUI.click(findTestObject('Client Portal/Profile/search_profileName'))
+	//WebUI.click(findTestObject('Client Portal/Profile/search_profileName'))
 
-    WebUI.waitForElementNotVisible(findTestObject('Client Portal/a.Common/popout_msg'), 5)
+    //WebUI.waitForElementNotVisible(findTestObject('Client Portal/a.Common/popout_msg'), 5)
 
-    WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
+    //WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
 	
 	WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/search profile'), [('profileName') : profileName], FailureHandling.STOP_ON_FAILURE)
 }

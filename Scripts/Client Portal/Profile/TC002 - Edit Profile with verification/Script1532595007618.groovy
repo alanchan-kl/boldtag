@@ -20,21 +20,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import randomWords.GenerateAction as GenerateAction
 
-if (GlobalVariable.loginAction == false) {
-    WebUI.callTestCase(findTestCase('Client Portal/Login/Verify Login Success'), [('username') : GlobalVariable.username
-            , ('password') : GlobalVariable.password], FailureHandling.STOP_ON_FAILURE)
-}
-
-if (GlobalVariable.moduleAccess == false) {
-    WebUI.callTestCase(findTestCase('Client Portal/Module Access/Acess Profile Screen'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-
-WebUI.setText(findTestObject('Client Portal/Profile/search_profileName'), profileName)
-
-WebUI.click(findTestObject('Client Portal/Profile/search_profileName'))
-
-WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
-
 WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/search profile'), [('searchAction') : searchAction, ('profileName') : profileName], 
     FailureHandling.STOP_ON_FAILURE)
 
@@ -58,13 +43,13 @@ if (WebUI.verifyMatch(serverMsg, msgSuccess, true, FailureHandling.OPTIONAL)) {
 }
 
 if (updateSuccess == true) {
-	WebUI.setText(findTestObject('Client Portal/Profile/search_profileName'), newprofileName)
+	//WebUI.setText(findTestObject('Client Portal/Profile/search_profileName'), newprofileName)
 	
-	WebUI.click(findTestObject('Client Portal/Profile/search_profileName'))
+	//WebUI.click(findTestObject('Client Portal/Profile/search_profileName'))
 
-	WebUI.waitForElementNotVisible(findTestObject('Client Portal/a.Common/popout_msg'), 5)
+	//WebUI.waitForElementNotVisible(findTestObject('Client Portal/a.Common/popout_msg'), 5)
 
-	WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
+	//WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
 	
 	WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/search profile'), [('profileName') : newprofileName], FailureHandling.STOP_ON_FAILURE)
 }
