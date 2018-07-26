@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>create profile</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ad861af0-fd62-40f6-8d27-2de4835685b7</testCaseGuid>
+   <variable>
+      <defaultValue>'Alan Chan'</defaultValue>
+      <description></description>
+      <id>aa89f411-6edd-4833-b1c0-b4ee1e3ffd55</id>
+      <masked>false</masked>
+      <name>profileName</name>
+   </variable>
+   <variable>
+      <defaultValue>'add'</defaultValue>
+      <description></description>
+      <id>36db223b-21f3-4767-a4e0-77de43501f91</id>
+      <masked>false</masked>
+      <name>updateAction</name>
+   </variable>
+</TestCaseEntity>

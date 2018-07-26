@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>search profile</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>89c1e52e-4408-48f8-913f-3136eb69064a</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>112b1865-96c8-438c-8530-5b96c7cc33bf</id>
+      <masked>false</masked>
+      <name>searchAction</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>153798a2-f56a-471b-8425-8acd9e88975e</id>
+      <masked>false</masked>
+      <name>row</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>a0754dbe-9c5f-445a-8d37-466177ed1bb9</id>
+      <masked>false</masked>
+      <name>column</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>0c02ebc1-63bf-442a-b346-933bffc6c5ea</id>
+      <masked>false</masked>
+      <name>rows_count</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>520cc1c4-3d63-4660-8b64-f3a639fb6fe3</id>
+      <masked>false</masked>
+      <name>columns_count</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>532c4289-1627-42ba-9f50-06101e06adc7</id>
+      <masked>false</masked>
+      <name>profileName</name>
+   </variable>
+</TestCaseEntity>

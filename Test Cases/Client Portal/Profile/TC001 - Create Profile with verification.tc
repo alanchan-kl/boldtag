@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC001 - Create Profile with verification</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9c2c1f16-cc79-4703-99ae-8e4ecfbdb219</testCaseGuid>
+   <variable>
+      <defaultValue>'Alan Chan'</defaultValue>
+      <description></description>
+      <id>24d0c52a-0e3c-4792-848f-5fc3b28efa3c</id>
+      <masked>false</masked>
+      <name>profileName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Saved.'</defaultValue>
+      <description></description>
+      <id>c46a2b0c-f005-49eb-8f9b-0430b92762e2</id>
+      <masked>false</masked>
+      <name>msgSuccess</name>
+   </variable>
+</TestCaseEntity>

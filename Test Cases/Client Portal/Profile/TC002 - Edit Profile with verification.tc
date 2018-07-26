@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC002 - Edit Profile with verification</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a70acbb1-a1cb-49cb-b8c9-0f93f0d44459</testCaseGuid>
+   <variable>
+      <defaultValue>'edit'</defaultValue>
+      <description></description>
+      <id>8fc88587-0c5f-4c65-ad97-f013bce88dd6</id>
+      <masked>false</masked>
+      <name>searchAction</name>
+   </variable>
+   <variable>
+      <defaultValue>'edit'</defaultValue>
+      <description></description>
+      <id>2b724801-18b8-43f5-9794-e50e878d9bb9</id>
+      <masked>false</masked>
+      <name>updateAction</name>
+   </variable>
+   <variable>
+      <defaultValue>'Alan ChanOzUz7'</defaultValue>
+      <description></description>
+      <id>19eeaf27-09fe-40c3-8260-84c6e4e29f36</id>
+      <masked>false</masked>
+      <name>profileName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Alan Chan'</defaultValue>
+      <description></description>
+      <id>665f8e49-7354-492c-aec0-a2ffb70ebc96</id>
+      <masked>false</masked>
+      <name>newprofileName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Profile updated.'</defaultValue>
+      <description></description>
+      <id>f85e302c-2587-41bb-b60a-4cb62fd75742</id>
+      <masked>false</masked>
+      <name>msgSuccess</name>
+   </variable>
+</TestCaseEntity>

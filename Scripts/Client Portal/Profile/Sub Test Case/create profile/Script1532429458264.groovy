@@ -2,6 +2,9 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import java.awt.RenderingHints.Key
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -28,10 +31,25 @@ if (GlobalVariable.moduleAccess == false) {
 	WebUI.callTestCase(findTestCase('Client Portal/Module Access/Acess Profile Screen'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
-WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/header_profile'), 2)
+if(updateAction.toLowerCase() == 'add'){
+	WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/header_profile'), 2)
+	
+	WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/button_New Profile'), 2)
+	
+	WebUI.click(findTestObject('Client Portal/Profile/button_New Profile'))
+}
 
-WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/button_New Profile'), 2)
+WebUI.delay(2)
+WebUI.waitForElementPresent(findTestObject('Client Portal/Profile/Create Profile/label_Profile Name'), 2)
+WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/Create Profile/label_Profile Name'), 2)
 
-WebUI.verifyElementVisible(findTestObject('Client Portal/Profile/Create Profile/label_Profile Name'))
+WebUI.setText(findTestObject('Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'), profileName)
+
+if(updateAction.toLowerCase() == 'add'){
+	WebUI.click(findTestObject('Client Portal/Profile/Create Profile/Fields and Actions/button_Create'))
+}else if (updateAction.toLowerCase() == 'edit'){
+	WebUI.click(findTestObject('Object Repository/Client Portal/Profile/Edit Profile/button_Save'))
+}
+
 
 

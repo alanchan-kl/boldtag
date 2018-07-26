@@ -2,6 +2,8 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import org.apache.ivy.osgi.core.BundleInfoAdapter.ProfileNotFoundException as ProfileNotFoundException
+import org.junit.After as After
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -18,35 +20,38 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.exception.StepErrorException
+import com.kms.katalon.core.exception.StepErrorException as StepErrorException
+import randomWords.GenerateAction as GenerateAction
 
-WebUI.callTestCase(findTestCase('Client Portal/Login/Sub Test Case/Login Action'), [('username') : username, ('password') : password], 
+def randomWords = CustomKeywords.'randomWords.GenerateAction.randomString'(5)
+
+profileName = (profileName + randomWords)
+
+WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/create profile'), [('profileName') : profileName], 
     FailureHandling.STOP_ON_FAILURE)
 
-def userAccess = false
+WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/popout_msg'), 2)
 
-if(WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/button_End tour'), 5)){
-	WebUI.click(findTestObject('Client Portal/a.Common/button_End tour'))
+def serverMsg = WebUI.getText(findTestObject('Client Portal/a.Common/popout_msg'))
+
+def updateSuccess = false
+
+if (WebUI.verifyMatch(serverMsg, msgSuccess, true, FailureHandling.OPTIONAL)) {
+    updateSuccess = true
+} else {
+    updateSuccess = false
 }
 
-if(WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/sidebar_username'), 5)){
-	def verifyusername1 = WebUI.getText(findTestObject('Client Portal/a.Common/sidebar_username'))
-	WebUI.verifyMatch(verifyusername1, username, true)
-	userAccess = true
-}else {
-	userAccess = false
-}
+if (updateSuccess == true) {
+    WebUI.setText(findTestObject('Client Portal/Profile/search_profileName'), profileName)
 
-if(WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/topbar_username'), 3)){
-	def verifyusername2 = WebUI.getText(findTestObject('Client Portal/a.Common/topbar_username'))
-	WebUI.verifyMatch(verifyusername2, username, true)
-	userAccess = true
-}else {
-	userAccess = false
-}
+    WebUI.click(findTestObject('Client Portal/Profile/search_profileName'))
 
-if(userAccess == false){
-	throw new com.kms.katalon.core.exception.StepErrorException('Invalid username and password')
+    WebUI.waitForElementNotVisible(findTestObject('Client Portal/a.Common/popout_msg'), 5)
+
+    WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
+	
+	WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/search profile'), [('profileName') : profileName], FailureHandling.STOP_ON_FAILURE)
 }
 
 

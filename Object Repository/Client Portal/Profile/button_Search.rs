@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>label_Profile Name</name>
+   <name>button_Search</name>
    <tag></tag>
-   <elementGuidId>a67d788f-c46a-4ccc-b136-487a1fe2b3b5</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//label[(text() = 'Profile Name' or . = 'Profile Name')]</value>
-      </entry>
-   </selectorCollection>
+   <elementGuidId>1f7f8f33-1f69-4f6c-98fb-75570f259d32</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -17,27 +11,20 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>label</value>
+      <value>i</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>col-sm-3 control-label</value>
+      <value>fa fa-search</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Profile Name</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;client-form&quot;)/div[@class=&quot;form-group&quot;]/label[@class=&quot;col-sm-3 control-label&quot;]</value>
+      <value>id(&quot;div_search_client&quot;)/div[@class=&quot;input-group&quot;]/span[@class=&quot;input-group-btn&quot;]/button[@class=&quot;btn btn-default&quot;]/i[@class=&quot;fa fa-search&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
