@@ -15,6 +15,13 @@
    <variable>
       <defaultValue>0</defaultValue>
       <description></description>
+      <id>d9aec3be-81d3-4d80-beef-d4aeed8dff8c</id>
+      <masked>false</masked>
+      <name>pageNum</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
       <id>153798a2-f56a-471b-8425-8acd9e88975e</id>
       <masked>false</masked>
       <name>row</name>
@@ -41,10 +48,17 @@
       <name>columns_count</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'Alan Channglel'</defaultValue>
       <description></description>
       <id>532c4289-1627-42ba-9f50-06101e06adc7</id>
       <masked>false</masked>
       <name>profileName</name>
+   </variable>
+   <variable>
+      <defaultValue>'false'</defaultValue>
+      <description></description>
+      <id>2f681d7d-e3a2-4cc9-997c-c23f8b64e658</id>
+      <masked>false</masked>
+      <name>filterSearch</name>
    </variable>
 </TestCaseEntity>

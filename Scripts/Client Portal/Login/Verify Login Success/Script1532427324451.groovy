@@ -27,6 +27,7 @@ def userAccess = false
 
 if(WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/button_End tour'), 5)){
 	WebUI.click(findTestObject('Client Portal/a.Common/button_End tour'))
+	WebUI.waitForElementNotPresent(findTestObject('Client Portal/a.Common/button_End tour'), 5)
 }
 
 if(WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/sidebar_username'), 5)){
