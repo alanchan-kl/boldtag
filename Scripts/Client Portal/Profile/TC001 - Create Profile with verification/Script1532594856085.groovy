@@ -27,7 +27,7 @@ def randomWords = CustomKeywords.'randomWords.GenerateAction.randomString'(5)
 
 profileName = (profileName + randomWords)
 
-WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/create profile'), [('profileName') : profileName], 
+WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/create profile'), [('profileName') : profileName, ('updateAction') : updateAction], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/popout_msg'), 2)

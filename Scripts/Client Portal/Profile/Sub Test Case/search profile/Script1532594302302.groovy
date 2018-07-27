@@ -59,7 +59,7 @@ String[] splitMsg2 = splitMsg[1].split('entries')
 
 //WebUI.verifyMatch(splitMsg2[0], splitMsg2[0], true)
 def totalPages = splitMsg2[0].toInteger()/10 + 1
-totalPages = Integer.parseInt(String.valueOf(totalPages).split("\\.")[0])
+totalPages = Integer.parseInt(String.valueOf(totalPages).split('\\.')[0])
 
 //WebUI.verifyMatch(totalPages, totalPages, true)
 

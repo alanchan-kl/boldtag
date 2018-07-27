@@ -19,4 +19,11 @@
       <masked>false</masked>
       <name>msgSuccess</name>
    </variable>
+   <variable>
+      <defaultValue>'add'</defaultValue>
+      <description></description>
+      <id>0429209c-0c64-4b2d-9d05-36f084ded7b5</id>
+      <masked>false</masked>
+      <name>updateAction</name>
+   </variable>
 </TestCaseEntity>
