@@ -42,6 +42,10 @@ if(filterSearch.toLowerCase() == 'true'){
 	WebUI.waitForElementNotVisible(findTestObject('Client Portal/a.Common/popout_msg'), 5)
 	
 	WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 10)
+	
+	WebUI.delay(2)
+}else {
+	WebUI.delay(2)
 }
 
 def verifyRecord = false
@@ -89,15 +93,17 @@ for(pageNum = 1; pageNum <= totalPages; pageNum++){
 			if (celltext == profileName) {
 				'Getting the Date Created if cell text i.e Profile Name matches with Expected value'
 				//println('Text present in row number 3 is: ' + Columns_row.get(2).getText())
-				 
+				def editXpath = '//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[' + ++row + ']/td[4]/button[1]'
+				def viewXpath = '//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[' + row++ + ']/td[4]/button[2]'
 				dateCreated = Columns_row.get(2).getText()
 				verifyRecord = true
 				//WebUI.verifyMatch(dateCreated, dateCreated, true)
-				
-				if(searchAction.toLowerCase() == ''){
-					Columns_row.get(3).findElement(By.tagName('button')).click()
+				if(searchAction.toLowerCase() == 'edit'){
+					Columns_row.get(3).findElement(By.xpath(editXpath)).click()
 				}
-				
+				if(searchAction.toLowerCase() == 'view'){
+					Columns_row.get(3).findElement(By.xpath(viewXpath)).click()
+				}
 				'After getting the Expected value from Table we will Terminate the loop'
 				break Loop;
 			}

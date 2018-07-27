@@ -38,7 +38,7 @@ if(WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/sidebar_us
 	userAccess = false
 }
 
-if(WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/topbar_username'), 3)){
+if(WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/topbar_username'), 5)){
 	def verifyusername2 = WebUI.getText(findTestObject('Client Portal/a.Common/topbar_username'))
 	WebUI.verifyMatch(verifyusername2, username, true)
 	userAccess = true
