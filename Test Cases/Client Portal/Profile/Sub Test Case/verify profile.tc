@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verify profile</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a84a6bf0-c00d-490f-9661-95bb06ecdd96</testCaseGuid>
+   <variable>
+      <defaultValue>'Saved.'</defaultValue>
+      <description></description>
+      <id>c5ef317e-4549-4314-8653-f0deb42c211e</id>
+      <masked>false</masked>
+      <name>msgCreateSuccess</name>
+   </variable>
+   <variable>
+      <defaultValue>'Profile updated.'</defaultValue>
+      <description></description>
+      <id>fbe9b7d7-a01e-4754-a136-a661230f137f</id>
+      <masked>false</masked>
+      <name>msgEditSuccess</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3e39a1ba-9931-4a2e-9f57-bae0c679153b</id>
+      <masked>false</masked>
+      <name>profileName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c565f151-24ce-44ab-a7bd-0a0480334d14</id>
+      <masked>false</masked>
+      <name>filterSearch</name>
+   </variable>
+   <variable>
+      <defaultValue>'Duplicate profile name.'</defaultValue>
+      <description></description>
+      <id>7bda40a1-3eea-44e2-a391-b847be50ef5e</id>
+      <masked>false</masked>
+      <name>msgDuplicate</name>
+   </variable>
+</TestCaseEntity>

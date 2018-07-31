@@ -13,17 +13,17 @@
       <name>profileName</name>
    </variable>
    <variable>
-      <defaultValue>'Saved.'</defaultValue>
-      <description></description>
-      <id>c46a2b0c-f005-49eb-8f9b-0430b92762e2</id>
-      <masked>false</masked>
-      <name>msgSuccess</name>
-   </variable>
-   <variable>
       <defaultValue>'add'</defaultValue>
       <description></description>
       <id>0429209c-0c64-4b2d-9d05-36f084ded7b5</id>
       <masked>false</masked>
       <name>updateAction</name>
+   </variable>
+   <variable>
+      <defaultValue>'false'</defaultValue>
+      <description></description>
+      <id>c4f1289a-db98-4387-b4c9-db721596fbd4</id>
+      <masked>false</masked>
+      <name>filterSearch</name>
    </variable>
 </TestCaseEntity>

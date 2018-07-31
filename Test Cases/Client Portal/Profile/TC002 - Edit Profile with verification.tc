@@ -20,7 +20,7 @@
       <name>updateAction</name>
    </variable>
    <variable>
-      <defaultValue>'test14'</defaultValue>
+      <defaultValue>'Alan Chan Kai Loon'</defaultValue>
       <description></description>
       <id>19eeaf27-09fe-40c3-8260-84c6e4e29f36</id>
       <masked>false</masked>
@@ -34,10 +34,10 @@
       <name>newprofileName</name>
    </variable>
    <variable>
-      <defaultValue>'Profile updated.'</defaultValue>
+      <defaultValue>'true'</defaultValue>
       <description></description>
-      <id>f85e302c-2587-41bb-b60a-4cb62fd75742</id>
+      <id>bb997608-ff0e-456e-a46c-7c81afc57a02</id>
       <masked>false</masked>
-      <name>msgSuccess</name>
+      <name>filterSearch</name>
    </variable>
 </TestCaseEntity>

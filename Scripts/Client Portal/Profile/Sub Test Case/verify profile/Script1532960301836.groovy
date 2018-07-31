@@ -2,8 +2,6 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import org.apache.ivy.osgi.core.BundleInfoAdapter.ProfileNotFoundException as ProfileNotFoundException
-import org.junit.After as After
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -20,15 +18,46 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.exception.StepErrorException as StepErrorException
-import randomWords.GenerateAction as GenerateAction
 
-def randomWords = CustomKeywords.'randomWords.GenerateAction.randomString'(5)
+WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/popout_msg'), 2)
 
-profileName = (profileName + randomWords)
+def serverMsg = WebUI.getText(findTestObject('Client Portal/a.Common/popout_msg'))
 
-WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/create profile'), [('profileName') : profileName, ('updateAction') : updateAction
-        , ('filterSearch') : filterSearch], FailureHandling.STOP_ON_FAILURE)
+def updateSuccess = false
 
-WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/verify profile'), [('profileName') : profileName, ('filterSearch') : filterSearch], FailureHandling.STOP_ON_FAILURE)
+if (WebUI.verifyMatch(serverMsg, msgCreateSuccess, true, FailureHandling.OPTIONAL)) {
+	updateSuccess = true
+} else {
+	updateSuccess = false
+}
+
+if (WebUI.verifyMatch(serverMsg, msgEditSuccess, true, FailureHandling.OPTIONAL)) {
+	updateSuccess = true
+} else {
+	updateSuccess = false
+}
+
+if(updateSuccess == true){
+	WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/search profile'), [('profileName') : profileName, ('filterSearch') : filterSearch], FailureHandling.STOP_ON_FAILURE)
+	GlobalVariable.moduleAccess = false
+}
+
+def updateFailed = false
+
+if(WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/Error Msg/msg_duplicate'), 2)){
+	updateFailed = true
+	WebUI.delay(2)
+	WebUI.refresh()
+}else{
+	updateFailed = false
+}
+if(WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/Error Msg/msg_mandatory'), 2)){
+	updateFailed = true
+	WebUI.delay(2)
+	WebUI.refresh()
+	
+}else {
+	updateFailed = false
+}
+
 

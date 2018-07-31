@@ -20,38 +20,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import randomWords.GenerateAction as GenerateAction
 
-WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/search profile'), [('searchAction') : searchAction, ('profileName') : profileName], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/search profile'), [('searchAction') : searchAction, ('profileName') : profileName
+        , ('filterSearch') : filterSearch], FailureHandling.STOP_ON_FAILURE)
 
 def randomWords = CustomKeywords.'randomWords.GenerateAction.randomString'(5)
 
-newprofileName = newprofileName + randomWords
+newprofileName = (newprofileName + randomWords)
 
-WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/create profile'), [('profileName') : newprofileName, ('updateAction') : updateAction], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/create profile'), [('profileName') : newprofileName
+        , ('updateAction') : updateAction], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/popout_msg'), 2)
-
-def serverMsg = WebUI.getText(findTestObject('Client Portal/a.Common/popout_msg'))
-
-def updateSuccess = false
-
-if (WebUI.verifyMatch(serverMsg, msgSuccess, true, FailureHandling.OPTIONAL)) {
-	updateSuccess = true
-} else {
-	updateSuccess = false
-}
-
-if (updateSuccess == true) {
-	//WebUI.setText(findTestObject('Client Portal/Profile/search_profileName'), newprofileName)
-	
-	//WebUI.click(findTestObject('Client Portal/Profile/search_profileName'))
-
-	//WebUI.waitForElementNotVisible(findTestObject('Client Portal/a.Common/popout_msg'), 5)
-
-	//WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
-	
-	WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/search profile'), [('profileName') : newprofileName], FailureHandling.STOP_ON_FAILURE)
-}
-
+WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/verify profile'), [('profileName') : newprofileName, ('filterSearch') : filterSearch], FailureHandling.STOP_ON_FAILURE)
 

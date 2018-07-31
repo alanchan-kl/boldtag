@@ -57,9 +57,14 @@ def numPagesMsg = WebUI.getText(findTestObject('Client Portal/Profile/totalRecor
 String[] splitMsg = numPagesMsg.split('of')
 String[] splitMsg2 = splitMsg[1].split('entries')
 
-//WebUI.verifyMatch(splitMsg2[0], splitMsg2[0], true)
-def totalPages = splitMsg2[0].toInteger()/10 + 1
-totalPages = Integer.parseInt(String.valueOf(totalPages).split('\\.')[0])
+def totalPages = 0
+def totalAmt = splitMsg2[0].toInteger()
+
+if(totalAmt != ''){
+	//WebUI.verifyMatch(splitMsg2[0], splitMsg2[0], true)
+	totalPages = totalAmt/10 + 1
+	totalPages = Integer.parseInt(String.valueOf(totalPages).split('\\.')[0])
+}
 
 //WebUI.verifyMatch(totalPages, totalPages, true)
 
@@ -71,46 +76,49 @@ List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 'To calculate no of rows In table'
 rows_count = rows_table.size()
 println(rows_count)
-'Loop will execute for all the rows of the table'
-Loop:
-for(pageNum = 1; pageNum <= totalPages; pageNum++){
-	for (row = 0; row < rows_count; row++) {
-		'To locate columns(cells) of that specific row'
-		List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td'))
-		
-		'To calculate no of columns(cells) In that specific row'
-		columns_count = Columns_row.size()
-		//println((('Number of cells In Row ' + row) + ' are ') + columns_count)
-		
-		'Loop will execute till the last cell of that specific row'
-		for (int column = 0; column < columns_count; column++) {
-			'It will retrieve text from each cell'
-			def celltext = Columns_row.get(column).getText()
-			 
-			//println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
+
+if(totalAmt != ''){
+	'Loop will execute for all the rows of the table'
+	Loop:
+	for(pageNum = 1; pageNum <= totalPages; pageNum++){
+		for (row = 0; row < rows_count; row++) {
+			'To locate columns(cells) of that specific row'
+			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td'))
 			
-			'Checking if Cell text is matching with the expected value'
-			if (celltext == profileName) {
-				'Getting the Date Created if cell text i.e Profile Name matches with Expected value'
-				//println('Text present in row number 3 is: ' + Columns_row.get(2).getText())
-				def editXpath = '//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[' + ++row + ']/td[4]/button[1]'
-				def viewXpath = '//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[' + row++ + ']/td[4]/button[2]'
-				dateCreated = Columns_row.get(2).getText()
-				verifyRecord = true
-				//WebUI.verifyMatch(dateCreated, dateCreated, true)
-				if(searchAction.toLowerCase() == 'edit'){
-					Columns_row.get(3).findElement(By.xpath(editXpath)).click()
+			'To calculate no of columns(cells) In that specific row'
+			columns_count = Columns_row.size()
+			//println((('Number of cells In Row ' + row) + ' are ') + columns_count)
+			
+			'Loop will execute till the last cell of that specific row'
+			for (int column = 0; column < columns_count; column++) {
+				'It will retrieve text from each cell'
+				def celltext = Columns_row.get(column).getText()
+				 
+				//println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
+				
+				'Checking if Cell text is matching with the expected value'
+				if (celltext == profileName) {
+					'Getting the Date Created if cell text i.e Profile Name matches with Expected value'
+					println('Text present in row number 2 is: ' + Columns_row.get(1).getText())
+					def editXpath = '//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[' + ++row + ']/td[4]/button[1]'
+					def viewXpath = '//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[' + row++ + ']/td[4]/button[2]'
+					dateCreated = Columns_row.get(2).getText()
+					verifyRecord = true
+					//WebUI.verifyMatch(dateCreated, dateCreated, true)
+					if(searchAction.toLowerCase() == 'edit'){
+						Columns_row.get(3).findElement(By.xpath(editXpath)).click()
+					}
+					if(searchAction.toLowerCase() == 'view'){
+						Columns_row.get(3).findElement(By.xpath(viewXpath)).click()
+					}
+					'After getting the Expected value from Table we will Terminate the loop'
+					break Loop;
 				}
-				if(searchAction.toLowerCase() == 'view'){
-					Columns_row.get(3).findElement(By.xpath(viewXpath)).click()
-				}
-				'After getting the Expected value from Table we will Terminate the loop'
-				break Loop;
 			}
 		}
+		WebUI.click(findTestObject('Client Portal/Profile/button_Next'))
+		WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
 	}
-	WebUI.click(findTestObject('Client Portal/Profile/button_Next'))
-	WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
 }
 
 println(dateCreated)
