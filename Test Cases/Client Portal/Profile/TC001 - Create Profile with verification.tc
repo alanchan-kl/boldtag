@@ -26,4 +26,18 @@
       <masked>false</masked>
       <name>filterSearch</name>
    </variable>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>0f3778e3-a76a-46e7-b454-9eeb3941f3dc</id>
+      <masked>false</masked>
+      <name>randomWord</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3cda4114-f159-483d-8955-c5e8a1b57ced</id>
+      <masked>false</masked>
+      <name>expectedResult</name>
+   </variable>
 </TestCaseEntity>

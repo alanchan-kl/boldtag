@@ -35,94 +35,99 @@ if (GlobalVariable.moduleAccess == false) {
 }
 
 if(filterSearch.toLowerCase() == 'true'){
-	WebUI.setText(findTestObject('Client Portal/Profile/search_profileName'), profileName)
-	
-	WebUI.click(findTestObject('Client Portal/Profile/search_profileName'))
-	
-	WebUI.waitForElementNotVisible(findTestObject('Client Portal/a.Common/popout_msg'), 5)
-	
-	WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 10)
-	
-	WebUI.delay(2)
+	if(profileName.trim() != ''){
+		WebUI.setText(findTestObject('Client Portal/Profile/search_profileName'), profileName)
+		
+		WebUI.click(findTestObject('Client Portal/Profile/search_profileName'))
+		
+		WebUI.waitForElementNotVisible(findTestObject('Client Portal/a.Common/popout_msg'), 5)
+		
+		WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 10)
+		
+		WebUI.delay(2)
+	}
 }else {
 	WebUI.delay(2)
 }
 
-def verifyRecord = false
-def dateCreated = ''
-//throw new com.kms.katalon.core.exception.StepErrorException('')
+def verifyRecord = true
 
-'Get number of pages'
-def numPagesMsg = WebUI.getText(findTestObject('Client Portal/Profile/totalRecords'))
-String[] splitMsg = numPagesMsg.split('of')
-String[] splitMsg2 = splitMsg[1].split('entries')
-
-def totalPages = 0
-def totalAmt = splitMsg2[0].toInteger()
-
-if(totalAmt != ''){
-	//WebUI.verifyMatch(splitMsg2[0], splitMsg2[0], true)
-	totalPages = totalAmt/10 + 1
-	totalPages = Integer.parseInt(String.valueOf(totalPages).split('\\.')[0])
-}
-
-//WebUI.verifyMatch(totalPages, totalPages, true)
-
-WebDriver driver = DriverFactory.getWebDriver()
-'To locate table'
-WebElement Table = driver.findElement(By.xpath("//table/tbody"))
-'To locate rows of table it will Capture all the rows available in the table'
-List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
-'To calculate no of rows In table'
-rows_count = rows_table.size()
-println(rows_count)
-
-if(totalAmt != ''){
-	'Loop will execute for all the rows of the table'
-	Loop:
-	for(pageNum = 1; pageNum <= totalPages; pageNum++){
-		for (row = 0; row < rows_count; row++) {
-			'To locate columns(cells) of that specific row'
-			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td'))
-			
-			'To calculate no of columns(cells) In that specific row'
-			columns_count = Columns_row.size()
-			//println((('Number of cells In Row ' + row) + ' are ') + columns_count)
-			
-			'Loop will execute till the last cell of that specific row'
-			for (int column = 0; column < columns_count; column++) {
-				'It will retrieve text from each cell'
-				def celltext = Columns_row.get(column).getText()
-				 
-				//println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
-				
-				'Checking if Cell text is matching with the expected value'
-				if (celltext == profileName) {
-					'Getting the Date Created if cell text i.e Profile Name matches with Expected value'
-					println('Text present in row number 2 is: ' + Columns_row.get(1).getText())
-					def editXpath = '//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[' + ++row + ']/td[4]/button[1]'
-					def viewXpath = '//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[' + row++ + ']/td[4]/button[2]'
-					dateCreated = Columns_row.get(2).getText()
-					verifyRecord = true
-					//WebUI.verifyMatch(dateCreated, dateCreated, true)
-					if(searchAction.toLowerCase() == 'edit'){
-						Columns_row.get(3).findElement(By.xpath(editXpath)).click()
-					}
-					if(searchAction.toLowerCase() == 'view'){
-						Columns_row.get(3).findElement(By.xpath(viewXpath)).click()
-					}
-					'After getting the Expected value from Table we will Terminate the loop'
-					break Loop;
-				}
-			}
-		}
-		WebUI.click(findTestObject('Client Portal/Profile/button_Next'))
-		WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
+if(WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/popout_msg'), 2)){
+	def verifymsgNoRecord = WebUI.getText(findTestObject('Client Portal/a.Common/popout_msg'))
+	if(WebUI.verifyMatch(verifymsgNoRecord, msgNoRecord, true)){
+		verifyRecord = false
 	}
 }
+//throw new com.kms.katalon.core.exception.StepErrorException('')
 
-println(dateCreated)
-
-if(verifyRecord == false){
-	throw new com.kms.katalon.core.exception.StepErrorException('Unable to find record.')
+if(verifyRecord == true){
+	'Get number of pages'
+	def numPagesMsg = WebUI.getText(findTestObject('Client Portal/Profile/totalRecords'))
+	String[] splitMsg = numPagesMsg.split('of')
+	String[] splitMsg2 = splitMsg[1].split('entries')
+	
+	def totalPages = 0
+	def totalAmt = splitMsg2[0].toInteger()
+	
+	if(totalAmt != ''){
+		//WebUI.verifyMatch(splitMsg2[0], splitMsg2[0], true)
+		totalPages = totalAmt/10 + 1
+		totalPages = Integer.parseInt(String.valueOf(totalPages).split('\\.')[0])
+	}
+	
+	//WebUI.verifyMatch(totalPages, totalPages, true)
+	
+	WebDriver driver = DriverFactory.getWebDriver()
+	'To locate table'
+	WebElement Table = driver.findElement(By.xpath("//table/tbody"))
+	'To locate rows of table it will Capture all the rows available in the table'
+	List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
+	'To calculate no of rows In table'
+	rows_count = rows_table.size()
+	println(rows_count)
+	
+	if(totalAmt != ''){
+		'Loop will execute for all the rows of the table'
+		Loop:
+		for(pageNum = 1; pageNum <= totalPages; pageNum++){
+			for (row = 0; row < rows_count; row++) {
+				'To locate columns(cells) of that specific row'
+				List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td'))
+				
+				'To calculate no of columns(cells) In that specific row'
+				columns_count = Columns_row.size()
+				//println((('Number of cells In Row ' + row) + ' are ') + columns_count)
+				
+				'Loop will execute till the last cell of that specific row'
+				for (int column = 0; column < columns_count; column++) {
+					'It will retrieve text from each cell'
+					def celltext = Columns_row.get(column).getText()
+					 
+					//println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
+					
+					'Checking if Cell text is matching with the expected value'
+					if (celltext == profileName) {
+						'Getting the Date Created if cell text i.e Profile Name matches with Expected value'
+						println('Profile Name: ' + Columns_row.get(1).getText())
+						def editXpath = '//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[' + ++row + ']/td[4]/button[1]'
+						def viewXpath = '//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[' + row++ + ']/td[4]/button[2]'
+						def dateCreated = Columns_row.get(2).getText()
+						println('Date Created: ' + dateCreated)
+						verifyRecord = true
+						//WebUI.verifyMatch(dateCreated, dateCreated, true)
+						if(searchAction.toLowerCase() == 'edit'){
+							Columns_row.get(3).findElement(By.xpath(editXpath)).click()
+						}
+						if(searchAction.toLowerCase() == 'view'){
+							Columns_row.get(3).findElement(By.xpath(viewXpath)).click()
+						}
+						'After getting the Expected value from Table we will Terminate the loop'
+						break Loop;
+					}
+				}
+			}
+			WebUI.click(findTestObject('Client Portal/Profile/button_Next'))
+			WebUI.verifyElementNotPresent(findTestObject('Client Portal/Profile/icon_refresh'), 5)
+		}
+	}
 }

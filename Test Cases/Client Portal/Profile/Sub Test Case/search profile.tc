@@ -6,6 +6,13 @@
    <comment></comment>
    <testCaseGuid>89c1e52e-4408-48f8-913f-3136eb69064a</testCaseGuid>
    <variable>
+      <defaultValue>'No record found.'</defaultValue>
+      <description></description>
+      <id>d11a3836-aa45-4db1-9e48-9fd35b3a4d2d</id>
+      <masked>false</masked>
+      <name>msgNoRecord</name>
+   </variable>
+   <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>112b1865-96c8-438c-8530-5b96c7cc33bf</id>
@@ -48,14 +55,14 @@
       <name>columns_count</name>
    </variable>
    <variable>
-      <defaultValue>'PICO'</defaultValue>
+      <defaultValue>'Alan Chan Kai LoonS079A'</defaultValue>
       <description></description>
       <id>532c4289-1627-42ba-9f50-06101e06adc7</id>
       <masked>false</masked>
       <name>profileName</name>
    </variable>
    <variable>
-      <defaultValue>'false'</defaultValue>
+      <defaultValue>'true'</defaultValue>
       <description></description>
       <id>2f681d7d-e3a2-4cc9-997c-c23f8b64e658</id>
       <masked>false</masked>

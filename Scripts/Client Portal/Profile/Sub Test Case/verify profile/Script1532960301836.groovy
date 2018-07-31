@@ -18,23 +18,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.exception.StepErrorException as StepErrorException
 
 WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/popout_msg'), 2)
 
 def serverMsg = WebUI.getText(findTestObject('Client Portal/a.Common/popout_msg'))
 
 def updateSuccess = false
+def updateFailed = false
 
 if (WebUI.verifyMatch(serverMsg, msgCreateSuccess, true, FailureHandling.OPTIONAL)) {
 	updateSuccess = true
-} else {
-	updateSuccess = false
-}
+} 
 
 if (WebUI.verifyMatch(serverMsg, msgEditSuccess, true, FailureHandling.OPTIONAL)) {
 	updateSuccess = true
-} else {
-	updateSuccess = false
 }
 
 if(updateSuccess == true){
@@ -42,22 +40,21 @@ if(updateSuccess == true){
 	GlobalVariable.moduleAccess = false
 }
 
-def updateFailed = false
-
 if(WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/Error Msg/msg_duplicate'), 2)){
 	updateFailed = true
 	WebUI.delay(2)
 	WebUI.refresh()
-}else{
-	updateFailed = false
 }
+
 if(WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/Error Msg/msg_mandatory'), 2)){
 	updateFailed = true
 	WebUI.delay(2)
 	WebUI.refresh()
 	
-}else {
-	updateFailed = false
+}
+
+if(updateSuccess == false && updateFailed == false){
+	throw new com.kms.katalon.core.exception.StepErrorException('Ops. There is proble encountered.')
 }
 
 

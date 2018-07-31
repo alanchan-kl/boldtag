@@ -29,14 +29,13 @@ if (GlobalVariable.loginAction == false) {
 
 if (GlobalVariable.moduleAccess == false) {
 	WebUI.callTestCase(findTestCase('Client Portal/Module Access/Acess Profile Screen'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-
-if(updateAction.toLowerCase() == 'add'){
-	WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/header_profile'), 2)
-	
-	WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/button_New Profile'), 2)
-	
-	WebUI.click(findTestObject('Client Portal/Profile/button_New Profile'))
+	if(updateAction.toLowerCase() == 'add'){
+		WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/header_profile'), 2)
+		
+		WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/button_New Profile'), 2)
+		
+		WebUI.click(findTestObject('Client Portal/Profile/button_New Profile'))
+	}
 }
 
 WebUI.delay(2)

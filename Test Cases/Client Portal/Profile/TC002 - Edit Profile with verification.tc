@@ -40,4 +40,11 @@
       <masked>false</masked>
       <name>filterSearch</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2eab8f53-873c-4421-b1d2-5b5a6f7d80a2</id>
+      <masked>false</masked>
+      <name>expectedResult</name>
+   </variable>
 </TestCaseEntity>

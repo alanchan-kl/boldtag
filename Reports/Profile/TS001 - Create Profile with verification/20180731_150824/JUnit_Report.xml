@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS001 - Create Profile with verification" time="47" tests="3" failures="1" errors="1">
+   <testsuite name="TS001 - Create Profile with verification" tests="3" failures="1" errors="1" time="47" timestamp="2018-07-31 15:08:26" hostname="kl.chan - KaiLoon0917.mk.macrokiosk.com" id="Test Suites/Profile/TS001 - Create Profile with verification">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kl.chan\\Katalon Studio\\boldtag\\Reports\\Profile\\TS001 - Create Profile with verification\\20180731_150824"/>
+         <property name="logFiles" value="C:\\Users\\kl.chan\\Katalon Studio\\boldtag\\Reports\\Profile\\TS001 - Create Profile with verification\\20180731_150824\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\kl.chan\\Katalon Studio\\boldtag\\Reports\\Profile\\TS001 - Create Profile with verification\\20180731_150824\\1533020952767.png"/>
+         <property name="hostName" value="kl.chan - KaiLoon0917.mk.macrokiosk.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.5.0.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="192.168.2.78"/>
+         <property name="sessionId" value="c8a5dbe9901ff2137fe16a703d1b423e"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Client Portal/Profile/TC001 - Create Profile with verification" classname="Test Cases/Client Portal/Profile/TC001 - Create Profile with verification" status="PASSED">
+         <system-out><![CDATA[2018-07-31 15:08:26 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/TC001 - Create Profile with verification: Test Cases/Client Portal/Profile/TC001 - Create Profile with verification
+
+2018-07-31 15:08:27 - [TEST_STEP][PASSED] - Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5): randomWords.GenerateAction.randomString is PASSED
+
+2018-07-31 15:08:27 - [MESSAGE][PASSED] - randomWords.GenerateAction.randomString is PASSED
+
+2018-07-31 15:08:27 - [TEST_STEP][PASSED] - Statement - If (profileName.trim() != ""): null
+
+2018-07-31 15:08:27 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-07-31 15:08:27 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/create profile: Test Cases/Client Portal/Profile/Sub Test Case/create profile
+
+2018-07-31 15:08:27 - [TEST_STEP][PASSED] - Statement - If (loginAction == false): Call Test Case 'Test Cases/Client Portal/Login/Verify Login Success' successfully
+
+2018-07-31 15:08:27 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Login/Verify Login Success' successfully
+
+2018-07-31 15:08:27 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Login/Verify Login Success: Test Cases/Client Portal/Login/Verify Login Success
+
+2018-07-31 15:08:28 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Login/Sub Test Case/Login Action' successfully
+
+2018-07-31 15:08:28 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Login/Sub Test Case/Login Action: Test Cases/Client Portal/Login/Sub Test Case/Login Action
+
+2018-07-31 15:08:28 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'sit.boldtag.net/login.html'
+
+2018-07-31 15:08:34 - [MESSAGE][PASSED] - Browser is opened with url: 'sit.boldtag.net/login.html'
+
+2018-07-31 15:08:34 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-31 15:08:35 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-31 15:08:35 - [TEST_STEP][PASSED] - setText: Text 'cwspreflat' is set on object 'Object Repository/Client Portal/Login/Fields and Actions/input_username'
+
+2018-07-31 15:08:36 - [MESSAGE][PASSED] - Text 'cwspreflat' is set on object 'Object Repository/Client Portal/Login/Fields and Actions/input_username'
+
+2018-07-31 15:08:36 - [TEST_STEP][PASSED] - setText: Text 'P@55word' is set on object 'Object Repository/Client Portal/Login/Fields and Actions/input_password'
+
+2018-07-31 15:08:36 - [MESSAGE][PASSED] - Text 'P@55word' is set on object 'Object Repository/Client Portal/Login/Fields and Actions/input_password'
+
+2018-07-31 15:08:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/Login/Fields and Actions/button_LOGIN' is clicked on
+
+2018-07-31 15:08:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/Login/Fields and Actions/button_LOGIN' is clicked on
+
+2018-07-31 15:08:36 - [TEST_STEP][PASSED] - Statement - loginAction = true: null
+
+2018-07-31 15:08:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Login/Sub Test Case/Login Action' successfully
+
+2018-07-31 15:08:36 - [TEST_STEP][PASSED] - Statement - userAccess = false: null
+
+2018-07-31 15:08:36 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/button_End tour), 5)): Web element with id: 'Object Repository/Client Portal/a.Common/button_End tour' located by 'By.xpath: //button[(text() = 'End tour' or . = 'End tour')]' is not present after '5' second(s)
+
+2018-07-31 15:08:37 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/button_End tour' is visible
+
+2018-07-31 15:08:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/a.Common/button_End tour' is clicked on
+
+2018-07-31 15:08:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/a.Common/button_End tour' is clicked on
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/Client Portal/a.Common/button_End tour' located by 'By.xpath: //button[(text() = 'End tour' or . = 'End tour')]' is not present after '5' second(s)
+
+2018-07-31 15:08:38 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Client Portal/a.Common/button_End tour' located by 'By.xpath: //button[(text() = 'End tour' or . = 'End tour')]' is not present after '5' second(s)
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/sidebar_username), 5)): null
+
+2018-07-31 15:08:38 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/sidebar_username' is visible
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - Statement - verifyusername1 = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/sidebar_username)): Text of object 'Object Repository/Client Portal/a.Common/sidebar_username' is: 'cwspreflat'
+
+2018-07-31 15:08:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/Client Portal/a.Common/sidebar_username' is: 'cwspreflat'
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - verifyMatch: Actual text 'cwspreflat' and expected text 'cwspreflat' are matched  using regular expression
+
+2018-07-31 15:08:38 - [MESSAGE][PASSED] - Actual text 'cwspreflat' and expected text 'cwspreflat' are matched  using regular expression
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - Statement - userAccess = true: null
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/topbar_username), 5)): null
+
+2018-07-31 15:08:38 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/topbar_username' is visible
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - Statement - verifyusername2 = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/topbar_username)): Text of object 'Object Repository/Client Portal/a.Common/topbar_username' is: 'cwspreflat'
+
+2018-07-31 15:08:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/Client Portal/a.Common/topbar_username' is: 'cwspreflat'
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - verifyMatch: Actual text 'cwspreflat' and expected text 'cwspreflat' are matched  using regular expression
+
+2018-07-31 15:08:38 - [MESSAGE][PASSED] - Actual text 'cwspreflat' and expected text 'cwspreflat' are matched  using regular expression
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - Statement - userAccess = true: null
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - Statement - If (userAccess == false): null
+
+2018-07-31 15:08:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Login/Verify Login Success' successfully
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): Object: 'Object Repository/Client Portal/Profile/button_New Profile' is clicked on
+
+2018-07-31 15:08:38 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Module Access/Acess Profile Screen' successfully
+
+2018-07-31 15:08:38 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Module Access/Acess Profile Screen: Test Cases/Client Portal/Module Access/Acess Profile Screen
+
+2018-07-31 15:08:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/Module Access/sidebar_link_profile' is clicked on
+
+2018-07-31 15:08:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/Module Access/sidebar_link_profile' is clicked on
+
+2018-07-31 15:08:39 - [TEST_STEP][PASSED] - Statement - moduleAccess = true: null
+
+2018-07-31 15:08:39 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Module Access/Acess Profile Screen' successfully
+
+2018-07-31 15:08:39 - [TEST_STEP][PASSED] - Statement - If (updateAction.toLowerCase() == "add"): Object: 'Object Repository/Client Portal/Profile/button_New Profile' is clicked on
+
+2018-07-31 15:08:39 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/Profile/header_profile' is visible
+
+2018-07-31 15:08:39 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/header_profile' is visible
+
+2018-07-31 15:08:39 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/Profile/button_New Profile' is visible
+
+2018-07-31 15:08:39 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/button_New Profile' is visible
+
+2018-07-31 15:08:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/Profile/button_New Profile' is clicked on
+
+2018-07-31 15:08:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/Profile/button_New Profile' is clicked on
+
+2018-07-31 15:08:40 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-31 15:08:42 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-07-31 15:08:42 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-07-31 15:08:42 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - setText: Text '' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-07-31 15:08:42 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - If (updateAction.toLowerCase() == "add"): Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:08:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:08:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' successfully
+
+2018-07-31 15:08:42 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/verify profile: Test Cases/Client Portal/Profile/Sub Test Case/verify profile
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-07-31 15:08:42 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - serverMsg = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/popout_msg)): Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Oops! Invalid inputs, please try again.'
+
+2018-07-31 15:08:42 - [MESSAGE][PASSED] - Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Oops! Invalid inputs, please try again.'
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - updateFailed = false: null
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgCreateSuccess, true, OPTIONAL)): Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' are not matched using regular expression)
+
+2018-07-31 15:08:42 - [MESSAGE][WARNING] - Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' are not matched using regular expression)
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgEditSuccess, true, OPTIONAL)): Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-07-31 15:08:42 - [MESSAGE][WARNING] - Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == true): null
+
+2018-07-31 15:08:42 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_duplicate), 2)): Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-07-31 15:08:44 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-07-31 15:08:44 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:08:44 - [TEST_STEP][PASSED] - Statement - updateFailed = false: null
+
+2018-07-31 15:08:44 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_mandatory), 2)): Refresh successfully
+
+2018-07-31 15:08:44 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Error Msg/msg_mandatory' is visible
+
+2018-07-31 15:08:44 - [TEST_STEP][PASSED] - Statement - updateFailed = true: null
+
+2018-07-31 15:08:44 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-31 15:08:46 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-31 15:08:46 - [TEST_STEP][PASSED] - refresh: Refresh successfully
+
+2018-07-31 15:08:47 - [MESSAGE][PASSED] - Refresh successfully
+
+2018-07-31 15:08:47 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == false && updateFailed == false): null
+
+2018-07-31 15:08:47 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Client Portal/Profile/TC001 - Create Profile with verification" classname="Test Cases/Client Portal/Profile/TC001 - Create Profile with verification" status="PASSED">
+         <system-out><![CDATA[2018-07-31 15:08:47 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/TC001 - Create Profile with verification: Test Cases/Client Portal/Profile/TC001 - Create Profile with verification
+
+2018-07-31 15:08:47 - [TEST_STEP][PASSED] - Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5): randomWords.GenerateAction.randomString is PASSED
+
+2018-07-31 15:08:47 - [MESSAGE][PASSED] - randomWords.GenerateAction.randomString is PASSED
+
+2018-07-31 15:08:47 - [TEST_STEP][PASSED] - Statement - If (profileName.trim() != ""): null
+
+2018-07-31 15:08:47 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-07-31 15:08:47 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/create profile: Test Cases/Client Portal/Profile/Sub Test Case/create profile
+
+2018-07-31 15:08:47 - [TEST_STEP][PASSED] - Statement - If (loginAction == false): null
+
+2018-07-31 15:08:47 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): null
+
+2018-07-31 15:08:47 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-31 15:08:49 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-07-31 15:08:49 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-07-31 15:08:49 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - setText: Text ' ' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-07-31 15:08:49 - [MESSAGE][PASSED] - Text ' ' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - If (updateAction.toLowerCase() == "add"): Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:08:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:08:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' successfully
+
+2018-07-31 15:08:49 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/verify profile: Test Cases/Client Portal/Profile/Sub Test Case/verify profile
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-07-31 15:08:49 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - serverMsg = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/popout_msg)): Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Oops! Invalid inputs, please try again.'
+
+2018-07-31 15:08:49 - [MESSAGE][PASSED] - Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Oops! Invalid inputs, please try again.'
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - updateFailed = false: null
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgCreateSuccess, true, OPTIONAL)): Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' are not matched using regular expression)
+
+2018-07-31 15:08:49 - [MESSAGE][WARNING] - Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' are not matched using regular expression)
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgEditSuccess, true, OPTIONAL)): Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-07-31 15:08:49 - [MESSAGE][WARNING] - Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == true): null
+
+2018-07-31 15:08:49 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_duplicate), 2)): Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-07-31 15:08:52 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-07-31 15:08:52 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:08:52 - [TEST_STEP][PASSED] - Statement - updateFailed = false: null
+
+2018-07-31 15:08:52 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_mandatory), 2)): Refresh successfully
+
+2018-07-31 15:08:52 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Error Msg/msg_mandatory' is visible
+
+2018-07-31 15:08:52 - [TEST_STEP][PASSED] - Statement - updateFailed = true: null
+
+2018-07-31 15:08:52 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-31 15:08:54 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-31 15:08:54 - [TEST_STEP][PASSED] - refresh: Refresh successfully
+
+2018-07-31 15:08:54 - [MESSAGE][PASSED] - Refresh successfully
+
+2018-07-31 15:08:54 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == false && updateFailed == false): null
+
+2018-07-31 15:08:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Client Portal/Profile/TC001 - Create Profile with verification" classname="Test Cases/Client Portal/Profile/TC001 - Create Profile with verification" status="PASSED">
+         <system-out><![CDATA[2018-07-31 15:08:54 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/TC001 - Create Profile with verification: Test Cases/Client Portal/Profile/TC001 - Create Profile with verification
+
+2018-07-31 15:08:54 - [TEST_STEP][PASSED] - Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5): randomWords.GenerateAction.randomString is PASSED
+
+2018-07-31 15:08:54 - [MESSAGE][PASSED] - randomWords.GenerateAction.randomString is PASSED
+
+2018-07-31 15:08:54 - [TEST_STEP][PASSED] - Statement - If (profileName.trim() != ""): null
+
+2018-07-31 15:08:54 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-07-31 15:08:54 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/create profile: Test Cases/Client Portal/Profile/Sub Test Case/create profile
+
+2018-07-31 15:08:54 - [TEST_STEP][PASSED] - Statement - If (loginAction == false): null
+
+2018-07-31 15:08:54 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): null
+
+2018-07-31 15:08:54 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-31 15:08:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-07-31 15:08:56 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-07-31 15:08:56 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - setText: Text '' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-07-31 15:08:56 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - If (updateAction.toLowerCase() == "add"): Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:08:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:08:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' successfully
+
+2018-07-31 15:08:56 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/verify profile: Test Cases/Client Portal/Profile/Sub Test Case/verify profile
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-07-31 15:08:56 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - serverMsg = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/popout_msg)): Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Oops! Invalid inputs, please try again.'
+
+2018-07-31 15:08:56 - [MESSAGE][PASSED] - Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Oops! Invalid inputs, please try again.'
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - updateFailed = false: null
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgCreateSuccess, true, OPTIONAL)): Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' are not matched using regular expression)
+
+2018-07-31 15:08:56 - [MESSAGE][WARNING] - Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' are not matched using regular expression)
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgEditSuccess, true, OPTIONAL)): Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-07-31 15:08:56 - [MESSAGE][WARNING] - Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == true): null
+
+2018-07-31 15:08:56 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_duplicate), 2)): Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-07-31 15:08:58 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-07-31 15:08:58 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:08:58 - [TEST_STEP][PASSED] - Statement - updateFailed = false: null
+
+2018-07-31 15:08:58 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_mandatory), 2)): Refresh successfully
+
+2018-07-31 15:08:59 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Error Msg/msg_mandatory' is visible
+
+2018-07-31 15:08:59 - [TEST_STEP][PASSED] - Statement - updateFailed = true: null
+
+2018-07-31 15:08:59 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-31 15:09:01 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-31 15:09:01 - [TEST_STEP][PASSED] - refresh: Refresh successfully
+
+2018-07-31 15:09:01 - [MESSAGE][PASSED] - Refresh successfully
+
+2018-07-31 15:09:01 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == false && updateFailed == false): null
+
+2018-07-31 15:09:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Client Portal/Profile/TC001 - Create Profile with verification" classname="Test Cases/Client Portal/Profile/TC001 - Create Profile with verification" status="ERROR">
+         <error type="ERROR" message="Test Cases/Client Portal/Profile/TC001 - Create Profile with verification FAILED because (of) Ops. There is proble encountered."/>
+         <system-out><![CDATA[2018-07-31 15:09:01 - [TEST_CASE][ERROR] - Test Cases/Client Portal/Profile/TC001 - Create Profile with verification: Test Cases/Client Portal/Profile/TC001 - Create Profile with verification FAILED because (of) Ops. There is proble encountered.
+
+2018-07-31 15:09:01 - [TEST_STEP][PASSED] - Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5): randomWords.GenerateAction.randomString is PASSED
+
+2018-07-31 15:09:01 - [MESSAGE][PASSED] - randomWords.GenerateAction.randomString is PASSED
+
+2018-07-31 15:09:01 - [TEST_STEP][PASSED] - Statement - If (profileName.trim() != ""): null
+
+2018-07-31 15:09:01 - [TEST_STEP][PASSED] - Statement - profileName = profileName + randomWords: null
+
+2018-07-31 15:09:01 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-07-31 15:09:01 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/create profile: Test Cases/Client Portal/Profile/Sub Test Case/create profile
+
+2018-07-31 15:09:01 - [TEST_STEP][PASSED] - Statement - If (loginAction == false): null
+
+2018-07-31 15:09:01 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): null
+
+2018-07-31 15:09:01 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-31 15:09:03 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-31 15:09:03 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-07-31 15:09:03 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-07-31 15:09:03 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-07-31 15:09:03 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-07-31 15:09:03 - [TEST_STEP][PASSED] - setText: Text 'AlanSiBD7' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-07-31 15:09:03 - [MESSAGE][PASSED] - Text 'AlanSiBD7' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-07-31 15:09:03 - [TEST_STEP][PASSED] - Statement - If (updateAction.toLowerCase() == "add"): Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:09:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:09:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/button_Create' is clicked on
+
+2018-07-31 15:09:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-07-31 15:09:03 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' (Root cause: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' failed because of error(s))
+
+2018-07-31 15:09:03 - [TEST_CASE][ERROR] - Test Cases/Client Portal/Profile/Sub Test Case/verify profile: Test Cases/Client Portal/Profile/Sub Test Case/verify profile FAILED because (of) Ops. There is proble encountered.
+
+2018-07-31 15:09:03 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-07-31 15:09:04 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-07-31 15:09:04 - [TEST_STEP][PASSED] - Statement - serverMsg = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/popout_msg)): Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Saved.'
+
+2018-07-31 15:09:04 - [MESSAGE][PASSED] - Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Saved.'
+
+2018-07-31 15:09:04 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-07-31 15:09:04 - [TEST_STEP][PASSED] - Statement - updateFailed = false: null
+
+2018-07-31 15:09:04 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgCreateSuccess, true, OPTIONAL)): null
+
+2018-07-31 15:09:04 - [MESSAGE][PASSED] - Actual text 'Saved.' and expected text 'Saved.' are matched  using regular expression
+
+2018-07-31 15:09:04 - [TEST_STEP][PASSED] - Statement - updateSuccess = true: null
+
+2018-07-31 15:09:04 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgEditSuccess, true, OPTIONAL)): Unable to verify match between actual text 'Saved.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Saved.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-07-31 15:09:04 - [MESSAGE][WARNING] - Unable to verify match between actual text 'Saved.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Saved.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-07-31 15:09:04 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:09:04 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-07-31 15:09:04 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == true): null
+
+2018-07-31 15:09:04 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_duplicate), 2)): Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-07-31 15:09:06 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-07-31 15:09:06 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:09:06 - [TEST_STEP][PASSED] - Statement - updateFailed = false: null
+
+2018-07-31 15:09:06 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_mandatory), 2)): Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_mandatory' located by 'By.xpath: //p[(text() = 'Please complete this field.' or . = 'Please complete this field.')]' not found
+
+2018-07-31 15:09:08 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_mandatory' located by 'By.xpath: //p[(text() = 'Please complete this field.' or . = 'Please complete this field.')]' not found
+
+2018-07-31 15:09:08 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-31 15:09:08 - [TEST_STEP][PASSED] - Statement - updateFailed = false: null
+
+2018-07-31 15:09:08 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == false && updateFailed == false): null
+
+2018-07-31 15:09:08 - [TEST_STEP][PASSED] - Statement - Throw new com.kms.katalon.core.exception.StepErrorException(Ops. There is proble encountered.): null
+
+2018-07-31 15:09:08 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' (Root cause: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' failed because of error(s))]]></system-out>
+         <system-err><![CDATA[2018-07-31 15:09:01 - [TEST_CASE][ERROR] - Test Cases/Client Portal/Profile/TC001 - Create Profile with verification: Test Cases/Client Portal/Profile/TC001 - Create Profile with verification FAILED because (of) Ops. There is proble encountered.]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Client Portal/Profile/TC001 - Create Profile with verification" classname="Test Cases/Client Portal/Profile/TC001 - Create Profile with verification" status="FAILED">
+         <failure type="FAILED" message="Unable to set text 'BOLD.Tag2XWoh' of object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KAILOON0917', ip: '192.168.2.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\KL49E2~1.CHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: c8a5dbe9901ff2137fe16a703d1b423e)"/>
+         <system-out><![CDATA[2018-07-31 15:09:08 - [TEST_CASE][FAILED] - Test Cases/Client Portal/Profile/TC001 - Create Profile with verification: Test Cases/Client Portal/Profile/TC001 - Create Profile with verification FAILED because (of) Unable to set text 'BOLD.Tag2XWoh' of object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KAILOON0917', ip: '192.168.2.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\KL49E2~1.CHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: c8a5dbe9901ff2137fe16a703d1b423e)
+
+2018-07-31 15:09:08 - [TEST_STEP][PASSED] - Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5): randomWords.GenerateAction.randomString is PASSED
+
+2018-07-31 15:09:08 - [MESSAGE][PASSED] - randomWords.GenerateAction.randomString is PASSED
+
+2018-07-31 15:09:08 - [TEST_STEP][PASSED] - Statement - If (profileName.trim() != ""): null
+
+2018-07-31 15:09:08 - [TEST_STEP][PASSED] - Statement - profileName = profileName + randomWords: null
+
+2018-07-31 15:09:08 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' (Root cause: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' failed)
+
+2018-07-31 15:09:08 - [TEST_CASE][FAILED] - Test Cases/Client Portal/Profile/Sub Test Case/create profile: Test Cases/Client Portal/Profile/Sub Test Case/create profile FAILED because (of) Unable to set text 'BOLD.Tag2XWoh' of object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KAILOON0917', ip: '192.168.2.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\KL49E2~1.CHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: c8a5dbe9901ff2137fe16a703d1b423e)
+
+2018-07-31 15:09:08 - [TEST_STEP][PASSED] - Statement - If (loginAction == false): null
+
+2018-07-31 15:09:08 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): null
+
+2018-07-31 15:09:08 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-31 15:09:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-31 15:09:10 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-07-31 15:09:10 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-07-31 15:09:10 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is not visible after 2 second(s)
+
+2018-07-31 15:09:12 - [MESSAGE][WARNING] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is not visible after 2 second(s)
+
+2018-07-31 15:09:12 - [TEST_STEP][FAILED] - setText: Unable to set text 'BOLD.Tag2XWoh' of object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KAILOON0917', ip: '192.168.2.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\KL49E2~1.CHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: c8a5dbe9901ff2137fe16a703d1b423e)
+
+2018-07-31 15:09:13 - [MESSAGE][FAILED] - Unable to set text 'BOLD.Tag2XWoh' of object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KAILOON0917', ip: '192.168.2.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\KL49E2~1.CHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: c8a5dbe9901ff2137fe16a703d1b423e)
+[[ATTACHMENT|C:\\Users\\kl.chan\\Katalon Studio\\boldtag\\Reports\\Profile\\TS001 - Create Profile with verification\\20180731_150824\\1533020952767.png]]
+
+2018-07-31 15:09:13 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' (Root cause: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' failed)]]></system-out>
+         <system-err><![CDATA[2018-07-31 15:09:08 - [TEST_CASE][FAILED] - Test Cases/Client Portal/Profile/TC001 - Create Profile with verification: Test Cases/Client Portal/Profile/TC001 - Create Profile with verification FAILED because (of) Unable to set text 'BOLD.Tag2XWoh' of object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KAILOON0917', ip: '192.168.2.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\KL49E2~1.CHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: c8a5dbe9901ff2137fe16a703d1b423e)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-31 15:08:26 - [TEST_SUITE][ERROR] - TS001 - Create Profile with verification: Test Cases/Client Portal/Profile/TC001 - Create Profile with verification FAILED because (of) Ops. There is proble encountered.]]></system-out>
+      <system-err><![CDATA[2018-07-31 15:08:26 - [TEST_SUITE][ERROR] - TS001 - Create Profile with verification: Test Cases/Client Portal/Profile/TC001 - Create Profile with verification FAILED because (of) Ops. There is proble encountered.]]></system-err>
+   </testsuite>
+</testsuites>

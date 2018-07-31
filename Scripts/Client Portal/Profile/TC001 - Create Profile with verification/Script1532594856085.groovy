@@ -25,7 +25,11 @@ import randomWords.GenerateAction as GenerateAction
 
 def randomWords = CustomKeywords.'randomWords.GenerateAction.randomString'(5)
 
-profileName = (profileName + randomWords)
+if(profileName.trim() != ''){
+	if(randomWord.toLowerCase() == 'true'){
+		profileName = (profileName + randomWords)
+	}
+}
 
 WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/create profile'), [('profileName') : profileName, ('updateAction') : updateAction
         , ('filterSearch') : filterSearch], FailureHandling.STOP_ON_FAILURE)
