@@ -41,15 +41,21 @@ if(updateSuccess == true){
 }
 
 if(WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/Error Msg/msg_duplicate'), 2)){
-	updateFailed = true
+	def verifyMsgDuplicate = WebUI.getText(findTestObject('Client Portal/Profile/Error Msg/msg_duplicate'))
+	
+	if(WebUI.verifyMatch(verifyMsgDuplicate, msgDuplicateAdd, true, FailureHandling.OPTIONAL)){
+		updateFailed = true
+	}else if(WebUI.verifyMatch(verifyMsgDuplicate, msgDuplicateEdit, true, FailureHandling.OPTIONAL)){
+		updateFailed = true
+	}
 	WebUI.delay(2)
-	WebUI.refresh()
+	//WebUI.refresh()
 }
 
 if(WebUI.waitForElementVisible(findTestObject('Client Portal/Profile/Error Msg/msg_mandatory'), 2)){
 	updateFailed = true
 	WebUI.delay(2)
-	WebUI.refresh()
+	//WebUI.refresh()
 	
 }
 

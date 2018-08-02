@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS001 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 09:29:30,2018-08-02 09:30:35,1m - 4.325s,FAILED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 09:29:31,2018-08-02 09:30:19,48.066s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 09:29:31,2018-08-02 09:30:12,40.417s,PASSED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 09:30:12,2018-08-02 09:30:12,0.016s,PASSED
+Statement - newprofileName = newprofileName + randomWords,Chrome 67.0.3396.99,,2018-08-02 09:30:12,2018-08-02 09:30:12,0.000s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 09:30:12,2018-08-02 09:30:14,2.652s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 09:30:14,2018-08-02 09:30:19,4.573s,FAILED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 09:30:19,2018-08-02 09:30:29,10.140s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 09:30:19,2018-08-02 09:30:24,5.595s,PASSED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 09:30:24,2018-08-02 09:30:24,0.000s,PASSED
+Statement - newprofileName = newprofileName + randomWords,Chrome 67.0.3396.99,,2018-08-02 09:30:24,2018-08-02 09:30:24,0.000s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 09:30:24,2018-08-02 09:30:29,4.523s,FAILED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 09:30:29,2018-08-02 09:30:33,4.229s,ERROR
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 09:30:29,2018-08-02 09:30:33,4.197s,FAILED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 09:30:33,2018-08-02 09:30:34,0.476s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 09:30:33,2018-08-02 09:30:34,0.451s,FAILED

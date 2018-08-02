@@ -13,7 +13,7 @@
       <name>msgNoRecord</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'edit'</defaultValue>
       <description></description>
       <id>112b1865-96c8-438c-8530-5b96c7cc33bf</id>
       <masked>false</masked>
@@ -55,14 +55,14 @@
       <name>columns_count</name>
    </variable>
    <variable>
-      <defaultValue>'Alan Chan Kai LoonS079A'</defaultValue>
+      <defaultValue>'Alan Chano0hRs'</defaultValue>
       <description></description>
       <id>532c4289-1627-42ba-9f50-06101e06adc7</id>
       <masked>false</masked>
       <name>profileName</name>
    </variable>
    <variable>
-      <defaultValue>'true'</defaultValue>
+      <defaultValue>'false'</defaultValue>
       <description></description>
       <id>2f681d7d-e3a2-4cc9-997c-c23f8b64e658</id>
       <masked>false</masked>

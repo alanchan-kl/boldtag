@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS001 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:24:24,2018-08-02 11:24:55,31.367s,ERROR
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:24:24,2018-08-02 11:24:48,23.524s,PASSED
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:24:25,2018-08-02 11:24:41,15.675s,PASSED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 11:24:41,2018-08-02 11:24:41,0.027s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:24:41,2018-08-02 11:24:41,0.001s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:24:41,2018-08-02 11:24:43,2.727s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:24:43,2018-08-02 11:24:48,4.636s,PASSED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:24:48,2018-08-02 11:24:54,6.513s,PASSED
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:24:48,2018-08-02 11:24:48,0.000s,PASSED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 11:24:48,2018-08-02 11:24:48,0.000s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:24:48,2018-08-02 11:24:48,0.001s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:24:48,2018-08-02 11:24:50,2.272s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:24:50,2018-08-02 11:24:54,4.215s,PASSED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:24:54,2018-08-02 11:24:55,0.043s,ERROR
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:24:55,2018-08-02 11:24:55,0.001s,PASSED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 11:24:55,2018-08-02 11:24:55,0.000s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:24:55,2018-08-02 11:24:55,0.001s,PASSED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:24:55,2018-08-02 11:24:55,0.045s,ERROR
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:24:55,2018-08-02 11:24:55,0.001s,PASSED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 11:24:55,2018-08-02 11:24:55,0.003s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:24:55,2018-08-02 11:24:55,0.002s,PASSED

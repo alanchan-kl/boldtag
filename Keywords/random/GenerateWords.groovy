@@ -1,4 +1,4 @@
-package randomWords
+package random
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -25,10 +25,10 @@ import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
-public class GenerateAction {
+public class GenerateWords {
 	@Keyword
 	def randomString(int numb) {
-		
+
 		String chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
 		Random rand = new Random();

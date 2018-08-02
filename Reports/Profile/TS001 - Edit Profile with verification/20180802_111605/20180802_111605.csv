@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS001 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:16:07,2018-08-02 11:16:34,27.328s,ERROR
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:16:07,2018-08-02 11:16:24,16.814s,ERROR
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:16:08,2018-08-02 11:16:24,16.326s,PASSED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 11:16:24,2018-08-02 11:16:24,0.024s,PASSED
+"Statement - If (profileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:16:24,2018-08-02 11:16:24,0.002s,PASSED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:16:24,2018-08-02 11:16:28,4.296s,ERROR
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:16:24,2018-08-02 11:16:28,4.261s,FAILED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:16:28,2018-08-02 11:16:33,4.326s,ERROR
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:16:28,2018-08-02 11:16:33,4.289s,FAILED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:16:33,2018-08-02 11:16:33,0.671s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:16:33,2018-08-02 11:16:33,0.648s,FAILED

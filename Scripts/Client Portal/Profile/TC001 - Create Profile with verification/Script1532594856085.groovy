@@ -21,12 +21,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.exception.StepErrorException as StepErrorException
-import randomWords.GenerateAction as GenerateAction
+import random.GenerateWords as GenerateWords
 
-def randomWords = CustomKeywords.'randomWords.GenerateAction.randomString'(5)
+def randomWords = CustomKeywords.'random.GenerateWords.randomString'(5)
 
 if(profileName.trim() != ''){
-	if(randomWord.toLowerCase() == 'true'){
+	if(randomWordAction.toLowerCase() == 'true'){
 		profileName = (profileName + randomWords)
 	}
 }

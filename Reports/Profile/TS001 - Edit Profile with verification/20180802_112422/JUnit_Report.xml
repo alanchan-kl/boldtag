@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS001 - Edit Profile with verification" time="31" tests="2" failures="0" errors="2">
+   <testsuite name="TS001 - Edit Profile with verification" tests="2" failures="0" errors="2" time="31" timestamp="2018-08-02 11:24:24" hostname="kl.chan - KaiLoon0917.mk.macrokiosk.com" id="Test Suites/Profile/TS001 - Edit Profile with verification">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kl.chan\\Katalon Studio\\boldtag\\Reports\\Profile\\TS001 - Edit Profile with verification\\20180802_112422"/>
+         <property name="logFiles" value="C:\\Users\\kl.chan\\Katalon Studio\\boldtag\\Reports\\Profile\\TS001 - Edit Profile with verification\\20180802_112422\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kl.chan - KaiLoon0917.mk.macrokiosk.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.5.0.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="192.168.2.78"/>
+         <property name="sessionId" value="4d5b94f8899318e265cc548888166b64"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification" classname="Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification" status="PASSED">
+         <system-out><![CDATA[2018-08-02 11:24:24 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification: Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification
+
+2018-08-02 11:24:25 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/search profile' successfully
+
+2018-08-02 11:24:25 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/search profile' successfully
+
+2018-08-02 11:24:25 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/search profile: Test Cases/Client Portal/Profile/Sub Test Case/search profile
+
+2018-08-02 11:24:26 - [TEST_STEP][PASSED] - Statement - If (loginAction == false): Call Test Case 'Test Cases/Client Portal/Login/Verify Login Success' successfully
+
+2018-08-02 11:24:26 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Login/Verify Login Success' successfully
+
+2018-08-02 11:24:26 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Login/Verify Login Success: Test Cases/Client Portal/Login/Verify Login Success
+
+2018-08-02 11:24:26 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Login/Sub Test Case/Login Action' successfully
+
+2018-08-02 11:24:26 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Login/Sub Test Case/Login Action: Test Cases/Client Portal/Login/Sub Test Case/Login Action
+
+2018-08-02 11:24:26 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'sit.boldtag.net/login.html'
+
+2018-08-02 11:24:31 - [MESSAGE][PASSED] - Browser is opened with url: 'sit.boldtag.net/login.html'
+
+2018-08-02 11:24:31 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-08-02 11:24:32 - [MESSAGE][PASSED] - Current window maximized
+
+2018-08-02 11:24:32 - [TEST_STEP][PASSED] - setText: Text 'cwspreflat' is set on object 'Object Repository/Client Portal/Login/Fields and Actions/input_username'
+
+2018-08-02 11:24:33 - [MESSAGE][PASSED] - Text 'cwspreflat' is set on object 'Object Repository/Client Portal/Login/Fields and Actions/input_username'
+
+2018-08-02 11:24:33 - [TEST_STEP][PASSED] - setText: Text 'P@55word' is set on object 'Object Repository/Client Portal/Login/Fields and Actions/input_password'
+
+2018-08-02 11:24:33 - [MESSAGE][PASSED] - Text 'P@55word' is set on object 'Object Repository/Client Portal/Login/Fields and Actions/input_password'
+
+2018-08-02 11:24:33 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/Login/Fields and Actions/button_LOGIN' is clicked on
+
+2018-08-02 11:24:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/Login/Fields and Actions/button_LOGIN' is clicked on
+
+2018-08-02 11:24:33 - [TEST_STEP][PASSED] - Statement - loginAction = true: null
+
+2018-08-02 11:24:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Login/Sub Test Case/Login Action' successfully
+
+2018-08-02 11:24:33 - [TEST_STEP][PASSED] - Statement - userAccess = false: null
+
+2018-08-02 11:24:33 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/button_End tour), 5)): Web element with id: 'Object Repository/Client Portal/a.Common/button_End tour' located by 'By.xpath: //button[(text() = 'End tour' or . = 'End tour')]' is not present after '5' second(s)
+
+2018-08-02 11:24:34 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/button_End tour' is visible
+
+2018-08-02 11:24:34 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/a.Common/button_End tour' is clicked on
+
+2018-08-02 11:24:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/a.Common/button_End tour' is clicked on
+
+2018-08-02 11:24:34 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/Client Portal/a.Common/button_End tour' located by 'By.xpath: //button[(text() = 'End tour' or . = 'End tour')]' is not present after '5' second(s)
+
+2018-08-02 11:24:35 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Client Portal/a.Common/button_End tour' located by 'By.xpath: //button[(text() = 'End tour' or . = 'End tour')]' is not present after '5' second(s)
+
+2018-08-02 11:24:35 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/sidebar_username), 5)): null
+
+2018-08-02 11:24:35 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/sidebar_username' is visible
+
+2018-08-02 11:24:35 - [TEST_STEP][PASSED] - Statement - verifyusername1 = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/sidebar_username)): Text of object 'Object Repository/Client Portal/a.Common/sidebar_username' is: 'cwspreflat'
+
+2018-08-02 11:24:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Client Portal/a.Common/sidebar_username' is: 'cwspreflat'
+
+2018-08-02 11:24:35 - [TEST_STEP][PASSED] - verifyMatch: Actual text 'cwspreflat' and expected text 'cwspreflat' are matched  using regular expression
+
+2018-08-02 11:24:35 - [MESSAGE][PASSED] - Actual text 'cwspreflat' and expected text 'cwspreflat' are matched  using regular expression
+
+2018-08-02 11:24:35 - [TEST_STEP][PASSED] - Statement - userAccess = true: null
+
+2018-08-02 11:24:35 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/topbar_username), 5)): null
+
+2018-08-02 11:24:35 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/topbar_username' is visible
+
+2018-08-02 11:24:35 - [TEST_STEP][PASSED] - Statement - verifyusername2 = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/topbar_username)): Text of object 'Object Repository/Client Portal/a.Common/topbar_username' is: 'cwspreflat'
+
+2018-08-02 11:24:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Client Portal/a.Common/topbar_username' is: 'cwspreflat'
+
+2018-08-02 11:24:35 - [TEST_STEP][PASSED] - verifyMatch: Actual text 'cwspreflat' and expected text 'cwspreflat' are matched  using regular expression
+
+2018-08-02 11:24:35 - [MESSAGE][PASSED] - Actual text 'cwspreflat' and expected text 'cwspreflat' are matched  using regular expression
+
+2018-08-02 11:24:35 - [TEST_STEP][PASSED] - Statement - userAccess = true: null
+
+2018-08-02 11:24:35 - [TEST_STEP][PASSED] - Statement - If (userAccess == false): null
+
+2018-08-02 11:24:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Login/Verify Login Success' successfully
+
+2018-08-02 11:24:35 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): Call Test Case 'Test Cases/Client Portal/Module Access/Acess Profile Screen' successfully
+
+2018-08-02 11:24:35 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Module Access/Acess Profile Screen' successfully
+
+2018-08-02 11:24:35 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Module Access/Acess Profile Screen: Test Cases/Client Portal/Module Access/Acess Profile Screen
+
+2018-08-02 11:24:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/Module Access/sidebar_link_profile' is clicked on
+
+2018-08-02 11:24:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/Module Access/sidebar_link_profile' is clicked on
+
+2018-08-02 11:24:36 - [TEST_STEP][PASSED] - Statement - moduleAccess = true: null
+
+2018-08-02 11:24:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Module Access/Acess Profile Screen' successfully
+
+2018-08-02 11:24:36 - [TEST_STEP][PASSED] - Statement - If (filterSearch.toLowerCase() == "true"): null
+
+2018-08-02 11:24:36 - [TEST_STEP][PASSED] - Statement - Else: Delayed 2 second(s)
+
+2018-08-02 11:24:36 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-08-02 11:24:38 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-08-02 11:24:38 - [TEST_STEP][PASSED] - Statement - verifyRecord = true: null
+
+2018-08-02 11:24:38 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/popout_msg), 2)): Object 'Object Repository/Client Portal/a.Common/popout_msg' is not visible after 2 second(s)
+
+2018-08-02 11:24:40 - [MESSAGE][WARNING] - Object 'Object Repository/Client Portal/a.Common/popout_msg' is not visible after 2 second(s)
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (verifyRecord == true): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - numPagesMsg = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/totalRecords)): Text of object 'Object Repository/Client Portal/Profile/totalRecords' is: 'Showing 1 to 10 of 112 entries'
+
+2018-08-02 11:24:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/Client Portal/Profile/totalRecords' is: 'Showing 1 to 10 of 112 entries'
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - splitMsg = numPagesMsg.split("of"): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - splitMsg2 = splitMsg[1].split("entries"): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - totalPages = 0: null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - totalAmt = splitMsg2[0].toInteger(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (totalAmt != ""): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - totalPages = totalAmt / 10 + 1: null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - totalPages = java.lang.Integer.parseInt(java.lang.String.valueOf(totalPages).split("\.")[0]): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - Table = driver.findElement(org.openqa.selenium.By.xpath("//table/tbody")): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - rows_table = Table.findElements(org.openqa.selenium.By.tagName("tr")): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - rows_count = rows_table.size(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - println(rows_count): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (totalAmt != ""): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - For ([pageNum = 1, pageNum <= totalPages, (pageNum++)]): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - For ([row = 0, row < rows_count, (row++)]): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - Columns_row = rows_table.get(row).findElements(org.openqa.selenium.By.tagName("td")): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - columns_count = Columns_row.size(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - For ([column = 0, column < columns_count, (column++)]): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - Columns_row = rows_table.get(row).findElements(org.openqa.selenium.By.tagName("td")): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - columns_count = Columns_row.size(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - For ([column = 0, column < columns_count, (column++)]): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - Columns_row = rows_table.get(row).findElements(org.openqa.selenium.By.tagName("td")): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - columns_count = Columns_row.size(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - For ([column = 0, column < columns_count, (column++)]): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - Columns_row = rows_table.get(row).findElements(org.openqa.selenium.By.tagName("td")): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - columns_count = Columns_row.size(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - For ([column = 0, column < columns_count, (column++)]): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - Columns_row = rows_table.get(row).findElements(org.openqa.selenium.By.tagName("td")): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - columns_count = Columns_row.size(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - For ([column = 0, column < columns_count, (column++)]): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - Columns_row = rows_table.get(row).findElements(org.openqa.selenium.By.tagName("td")): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - columns_count = Columns_row.size(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - For ([column = 0, column < columns_count, (column++)]): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - celltext = Columns_row.get(column).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (celltext == profileName): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - println("Profile Name: " + Columns_row.get(1).getText()): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - editXpath = "//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[" + (++row) + "]/td[4]/button[1]": null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - viewXpath = "//*[@id="wrapper"]/div[4]/div/div/div/div[3]/form/div[4]/div/div/table/tbody/tr[" + (row++) + "]/td[4]/button[2]": null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - dateCreated = Columns_row.get(2).getText(): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - println("Date Created: " + dateCreated): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - verifyRecord = true: null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - If (searchAction.toLowerCase() == "edit"): null
+
+2018-08-02 11:24:40 - [TEST_STEP][PASSED] - Statement - Columns_row.get(3).findElement(org.openqa.selenium.By.xpath(editXpath)).click(): null
+
+2018-08-02 11:24:41 - [TEST_STEP][PASSED] - Statement - If (searchAction.toLowerCase() == "view"): null
+
+2018-08-02 11:24:41 - [TEST_STEP][PASSED] - Statement - Break: null
+
+2018-08-02 11:24:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/search profile' successfully
+
+2018-08-02 11:24:41 - [TEST_STEP][PASSED] - Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5): randomWords.GenerateAction.randomString is PASSED
+
+2018-08-02 11:24:41 - [MESSAGE][PASSED] - randomWords.GenerateAction.randomString is PASSED
+
+2018-08-02 11:24:41 - [TEST_STEP][PASSED] - Statement - If (newprofileName.trim() != ""): null
+
+2018-08-02 11:24:41 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-08-02 11:24:41 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/create profile: Test Cases/Client Portal/Profile/Sub Test Case/create profile
+
+2018-08-02 11:24:41 - [TEST_STEP][PASSED] - Statement - If (loginAction == false): null
+
+2018-08-02 11:24:41 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): null
+
+2018-08-02 11:24:41 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-08-02 11:24:43 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-08-02 11:24:43 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-08-02 11:24:43 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-08-02 11:24:43 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-08-02 11:24:43 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-08-02 11:24:43 - [TEST_STEP][PASSED] - setText: Text '' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-08-02 11:24:43 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-08-02 11:24:43 - [TEST_STEP][PASSED] - Statement - If (updateAction.toLowerCase() == "add"): null
+
+2018-08-02 11:24:43 - [TEST_STEP][PASSED] - Statement - Else If (updateAction.toLowerCase() == "edit"): Object: 'Object Repository/Client Portal/Profile/Edit Profile/button_Save' is clicked on
+
+2018-08-02 11:24:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/Profile/Edit Profile/button_Save' is clicked on
+
+2018-08-02 11:24:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/Profile/Edit Profile/button_Save' is clicked on
+
+2018-08-02 11:24:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-08-02 11:24:43 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' successfully
+
+2018-08-02 11:24:43 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/verify profile: Test Cases/Client Portal/Profile/Sub Test Case/verify profile
+
+2018-08-02 11:24:44 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-08-02 11:24:44 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-08-02 11:24:44 - [TEST_STEP][PASSED] - Statement - serverMsg = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/popout_msg)): Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Oops! Invalid inputs, please try again.'
+
+2018-08-02 11:24:44 - [MESSAGE][PASSED] - Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Oops! Invalid inputs, please try again.'
+
+2018-08-02 11:24:44 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-08-02 11:24:44 - [TEST_STEP][PASSED] - Statement - updateFailed = false: null
+
+2018-08-02 11:24:44 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgCreateSuccess, true, OPTIONAL)): Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' are not matched using regular expression)
+
+2018-08-02 11:24:44 - [MESSAGE][WARNING] - Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' are not matched using regular expression)
+
+2018-08-02 11:24:44 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgEditSuccess, true, OPTIONAL)): Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-08-02 11:24:44 - [MESSAGE][WARNING] - Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-08-02 11:24:44 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == true): null
+
+2018-08-02 11:24:44 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_duplicate), 2)): Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-08-02 11:24:46 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-08-02 11:24:46 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_mandatory), 2)): Delayed 2 second(s)
+
+2018-08-02 11:24:46 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Error Msg/msg_mandatory' is visible
+
+2018-08-02 11:24:46 - [TEST_STEP][PASSED] - Statement - updateFailed = true: null
+
+2018-08-02 11:24:46 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-08-02 11:24:48 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-08-02 11:24:48 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == false && updateFailed == false): null
+
+2018-08-02 11:24:48 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification" classname="Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification" status="PASSED">
+         <system-out><![CDATA[2018-08-02 11:24:48 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification: Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification
+
+2018-08-02 11:24:48 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): null
+
+2018-08-02 11:24:48 - [TEST_STEP][PASSED] - Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5): randomWords.GenerateAction.randomString is PASSED
+
+2018-08-02 11:24:48 - [MESSAGE][PASSED] - randomWords.GenerateAction.randomString is PASSED
+
+2018-08-02 11:24:48 - [TEST_STEP][PASSED] - Statement - If (newprofileName.trim() != ""): null
+
+2018-08-02 11:24:48 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-08-02 11:24:48 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/create profile: Test Cases/Client Portal/Profile/Sub Test Case/create profile
+
+2018-08-02 11:24:48 - [TEST_STEP][PASSED] - Statement - If (loginAction == false): null
+
+2018-08-02 11:24:48 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): null
+
+2018-08-02 11:24:48 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-08-02 11:24:50 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-08-02 11:24:50 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is present
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-08-02 11:24:50 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Create Profile/label_Profile Name' is visible
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - setText: Text ' ' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-08-02 11:24:50 - [MESSAGE][PASSED] - Text ' ' is set on object 'Object Repository/Client Portal/Profile/Create Profile/Fields and Actions/input_profile name'
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - Statement - If (updateAction.toLowerCase() == "add"): null
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - Statement - Else If (updateAction.toLowerCase() == "edit"): Object: 'Object Repository/Client Portal/Profile/Edit Profile/button_Save' is clicked on
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Client Portal/Profile/Edit Profile/button_Save' is clicked on
+
+2018-08-02 11:24:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Client Portal/Profile/Edit Profile/button_Save' is clicked on
+
+2018-08-02 11:24:50 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/create profile' successfully
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' successfully
+
+2018-08-02 11:24:50 - [TEST_CASE][PASSED] - Test Cases/Client Portal/Profile/Sub Test Case/verify profile: Test Cases/Client Portal/Profile/Sub Test Case/verify profile
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-08-02 11:24:50 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/a.Common/popout_msg' is visible
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - Statement - serverMsg = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/a.Common/popout_msg)): Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Oops! Invalid inputs, please try again.'
+
+2018-08-02 11:24:50 - [MESSAGE][PASSED] - Text of object 'Object Repository/Client Portal/a.Common/popout_msg' is: 'Oops! Invalid inputs, please try again.'
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - Statement - updateSuccess = false: null
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - Statement - updateFailed = false: null
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgCreateSuccess, true, OPTIONAL)): Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' are not matched using regular expression)
+
+2018-08-02 11:24:50 - [MESSAGE][WARNING] - Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Saved.' are not matched using regular expression)
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(serverMsg, msgEditSuccess, true, OPTIONAL)): Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-08-02 11:24:50 - [MESSAGE][WARNING] - Unable to verify match between actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' using regular expression (Root cause: Actual text 'Oops! Invalid inputs, please try again.' and expected text 'Profile updated.' are not matched using regular expression)
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == true): null
+
+2018-08-02 11:24:50 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_duplicate), 2)): Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-08-02 11:24:52 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Client Portal/Profile/Error Msg/msg_duplicate' located by 'By.xpath: //p[(text() = 'Please insert unique profile name.' or . = 'Please insert unique profile name.')]' not found
+
+2018-08-02 11:24:52 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Client Portal/Profile/Error Msg/msg_mandatory), 2)): Delayed 2 second(s)
+
+2018-08-02 11:24:52 - [MESSAGE][PASSED] - Object 'Object Repository/Client Portal/Profile/Error Msg/msg_mandatory' is visible
+
+2018-08-02 11:24:52 - [TEST_STEP][PASSED] - Statement - updateFailed = true: null
+
+2018-08-02 11:24:52 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-08-02 11:24:54 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-08-02 11:24:54 - [TEST_STEP][PASSED] - Statement - If (updateSuccess == false && updateFailed == false): null
+
+2018-08-02 11:24:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Client Portal/Profile/Sub Test Case/verify profile' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification" classname="Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification" status="ERROR">
+         <error type="ERROR" message="Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification FAILED because (of) Variable 'randomWord' is not defined for test case."/>
+         <system-out><![CDATA[2018-08-02 11:24:54 - [TEST_CASE][ERROR] - Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification: Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification FAILED because (of) Variable 'randomWord' is not defined for test case.
+
+2018-08-02 11:24:55 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): null
+
+2018-08-02 11:24:55 - [TEST_STEP][PASSED] - Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5): randomWords.GenerateAction.randomString is PASSED
+
+2018-08-02 11:24:55 - [MESSAGE][PASSED] - randomWords.GenerateAction.randomString is PASSED
+
+2018-08-02 11:24:55 - [TEST_STEP][PASSED] - Statement - If (newprofileName.trim() != ""): null
+
+2018-08-02 11:24:55 - [TEST_STEP][PASSED] - Statement - If (randomWord.toLowerCase() == "true"): null]]></system-out>
+         <system-err><![CDATA[2018-08-02 11:24:54 - [TEST_CASE][ERROR] - Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification: Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification FAILED because (of) Variable 'randomWord' is not defined for test case.]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification" classname="Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification" status="ERROR">
+         <error type="ERROR" message="Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification FAILED because (of) Variable 'randomWord' is not defined for test case."/>
+         <system-out><![CDATA[2018-08-02 11:24:55 - [TEST_CASE][ERROR] - Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification: Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification FAILED because (of) Variable 'randomWord' is not defined for test case.
+
+2018-08-02 11:24:55 - [TEST_STEP][PASSED] - Statement - If (moduleAccess == false): null
+
+2018-08-02 11:24:55 - [TEST_STEP][PASSED] - Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5): randomWords.GenerateAction.randomString is PASSED
+
+2018-08-02 11:24:55 - [MESSAGE][PASSED] - randomWords.GenerateAction.randomString is PASSED
+
+2018-08-02 11:24:55 - [TEST_STEP][PASSED] - Statement - If (newprofileName.trim() != ""): null
+
+2018-08-02 11:24:55 - [TEST_STEP][PASSED] - Statement - If (randomWord.toLowerCase() == "true"): null]]></system-out>
+         <system-err><![CDATA[2018-08-02 11:24:55 - [TEST_CASE][ERROR] - Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification: Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification FAILED because (of) Variable 'randomWord' is not defined for test case.]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-08-02 11:24:24 - [TEST_SUITE][ERROR] - TS001 - Edit Profile with verification: Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification FAILED because (of) Variable 'randomWord' is not defined for test case.]]></system-out>
+      <system-err><![CDATA[2018-08-02 11:24:24 - [TEST_SUITE][ERROR] - TS001 - Edit Profile with verification: Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification FAILED because (of) Variable 'randomWord' is not defined for test case.]]></system-err>
+   </testsuite>
+</testsuites>

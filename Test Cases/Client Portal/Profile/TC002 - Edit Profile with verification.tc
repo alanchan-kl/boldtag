@@ -41,6 +41,13 @@
       <name>filterSearch</name>
    </variable>
    <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>ef7055f3-7968-40bb-83a0-f65755a8d790</id>
+      <masked>false</masked>
+      <name>randomWordAction</name>
+   </variable>
+   <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>2eab8f53-873c-4421-b1d2-5b5a6f7d80a2</id>

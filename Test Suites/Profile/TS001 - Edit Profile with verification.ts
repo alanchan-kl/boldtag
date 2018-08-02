@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TS001 - Edit Profile with verification</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <lastRun>2018-08-02T14:48:36</lastRun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>1c348662-3adf-43d2-b7e1-ac15dea7e047</testSuiteGuid>
+   <testCaseLink>
+      <guid>eb966f8b-7ee0-476a-b858-abb3833fad38</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>38cfeb03-1931-4bef-b551-9047930f3ee6</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Profile/DF002 - Edit Profile</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8fc88587-0c5f-4c65-ad97-f013bce88dd6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2b724801-18b8-43f5-9794-e50e878d9bb9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>38cfeb03-1931-4bef-b551-9047930f3ee6</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>profileName</value>
+         <variableId>19eeaf27-09fe-40c3-8260-84c6e4e29f36</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>38cfeb03-1931-4bef-b551-9047930f3ee6</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>newprofileName</value>
+         <variableId>665f8e49-7354-492c-aec0-a2ffb70ebc96</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>38cfeb03-1931-4bef-b551-9047930f3ee6</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>filterSearch</value>
+         <variableId>bb997608-ff0e-456e-a46c-7c81afc57a02</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>38cfeb03-1931-4bef-b551-9047930f3ee6</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>expectedResult</value>
+         <variableId>2eab8f53-873c-4421-b1d2-5b5a6f7d80a2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>38cfeb03-1931-4bef-b551-9047930f3ee6</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>randomWordAction</value>
+         <variableId>ef7055f3-7968-40bb-83a0-f65755a8d790</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

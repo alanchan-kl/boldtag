@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS001 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:20:32,2018-08-02 11:21:02,29.684s,FAILED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:20:32,2018-08-02 11:20:56,23.698s,PASSED
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:20:33,2018-08-02 11:20:48,15.573s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:20:48,2018-08-02 11:20:48,0.000s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:20:48,2018-08-02 11:20:51,2.720s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:20:51,2018-08-02 11:20:56,4.898s,PASSED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:20:56,2018-08-02 11:21:01,4.559s,FAILED
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:20:56,2018-08-02 11:20:56,0.002s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:20:56,2018-08-02 11:20:56,0.001s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:20:56,2018-08-02 11:21:01,4.526s,FAILED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:21:01,2018-08-02 11:21:01,0.033s,ERROR
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:21:01,2018-08-02 11:21:01,0.000s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:21:01,2018-08-02 11:21:01,0.001s,PASSED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:21:01,2018-08-02 11:21:01,0.063s,ERROR
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:21:01,2018-08-02 11:21:01,0.001s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:21:01,2018-08-02 11:21:01,0.002s,PASSED

@@ -4,7 +4,7 @@
    <name>TS001 - Create Profile with verification</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-07-31T15:21:44</lastRun>
+   <lastRun>2018-08-02T14:43:25</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -52,7 +52,7 @@
       <variableLink>
          <testDataLinkId>25a16264-4165-413e-833e-5966ed28c35e</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>randomWord</value>
+         <value>randomWordAction</value>
          <variableId>0f3778e3-a76a-46e7-b454-9eeb3941f3dc</variableId>
       </variableLink>
    </testCaseLink>

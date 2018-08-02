@@ -40,4 +40,18 @@
       <masked>false</masked>
       <name>msgDuplicate</name>
    </variable>
+   <variable>
+      <defaultValue>'Please insert unique profile name.'</defaultValue>
+      <description></description>
+      <id>116536b4-a2e0-4e6e-a54e-03bee347c360</id>
+      <masked>false</masked>
+      <name>msgDuplicateAdd</name>
+   </variable>
+   <variable>
+      <defaultValue>'Please update to unique profile name.'</defaultValue>
+      <description></description>
+      <id>30ba641e-878c-4d15-a8ac-fe4d370f7888</id>
+      <masked>false</masked>
+      <name>msgDuplicateEdit</name>
+   </variable>
 </TestCaseEntity>

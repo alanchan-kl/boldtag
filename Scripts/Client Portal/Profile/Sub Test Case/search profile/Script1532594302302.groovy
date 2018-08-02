@@ -24,6 +24,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import random.GenerateNumber as GenerateNumber
 
 if (GlobalVariable.loginAction == false) {
 	WebUI.callTestCase(findTestCase('Client Portal/Login/Verify Login Success'), [('username') : GlobalVariable.username
@@ -52,9 +53,9 @@ if(filterSearch.toLowerCase() == 'true'){
 
 def verifyRecord = true
 
-if(WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/popout_msg'), 2)){
+if(WebUI.waitForElementVisible(findTestObject('Client Portal/a.Common/popout_msg'), 3)){
 	def verifymsgNoRecord = WebUI.getText(findTestObject('Client Portal/a.Common/popout_msg'))
-	if(WebUI.verifyMatch(verifymsgNoRecord, msgNoRecord, true)){
+	if(WebUI.verifyMatch(verifymsgNoRecord, msgNoRecord, FailureHandling.OPTIONAL)){
 		verifyRecord = false
 	}
 }
@@ -68,11 +69,15 @@ if(verifyRecord == true){
 	
 	def totalPages = 0
 	def totalAmt = splitMsg2[0].toInteger()
+	def randomNumber = 0
 	
 	if(totalAmt != ''){
 		//WebUI.verifyMatch(splitMsg2[0], splitMsg2[0], true)
 		totalPages = totalAmt/10 + 1
 		totalPages = Integer.parseInt(String.valueOf(totalPages).split('\\.')[0])
+		
+		randomNumber = CustomKeywords.'random.GenerateNumber.randomNumber'(totalAmt)
+		println('Random number: ' + randomNumber)
 	}
 	
 	//WebUI.verifyMatch(totalPages, totalPages, true)
@@ -89,7 +94,7 @@ if(verifyRecord == true){
 	if(totalAmt != ''){
 		'Loop will execute for all the rows of the table'
 		Loop:
-		for(pageNum = 1; pageNum <= totalPages; pageNum++){
+		for(pageNum = 0; pageNum < totalPages; pageNum++){
 			for (row = 0; row < rows_count; row++) {
 				'To locate columns(cells) of that specific row'
 				List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td'))
@@ -97,7 +102,6 @@ if(verifyRecord == true){
 				'To calculate no of columns(cells) In that specific row'
 				columns_count = Columns_row.size()
 				//println((('Number of cells In Row ' + row) + ' are ') + columns_count)
-				
 				'Loop will execute till the last cell of that specific row'
 				for (int column = 0; column < columns_count; column++) {
 					'It will retrieve text from each cell'

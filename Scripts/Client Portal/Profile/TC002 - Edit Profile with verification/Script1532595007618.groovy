@@ -18,14 +18,22 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import randomWords.GenerateAction as GenerateAction
+import random.GenerateWords as GenerateWords
 
-WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/search profile'), [('searchAction') : searchAction, ('profileName') : profileName
-        , ('filterSearch') : filterSearch], FailureHandling.STOP_ON_FAILURE)
+if(GlobalVariable.moduleAccess == false){
+	WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/search profile'), [('searchAction') : searchAction, ('profileName') : profileName
+		, ('filterSearch') : filterSearch], FailureHandling.STOP_ON_FAILURE)
+}
 
-def randomWords = CustomKeywords.'randomWords.GenerateAction.randomString'(5)
+def randomWords = CustomKeywords.'random.GenerateWords.randomString'(5)
 
-newprofileName = (newprofileName + randomWords)
+if(newprofileName.trim() != ''){
+	if(randomWordAction.toLowerCase() == 'true'){
+		newprofileName = (newprofileName + randomWords)
+		println(newprofileName)
+	}
+}
+//newprofileName = (newprofileName + randomWords)
 
 WebUI.callTestCase(findTestCase('Client Portal/Profile/Sub Test Case/create profile'), [('profileName') : newprofileName
         , ('updateAction') : updateAction], FailureHandling.STOP_ON_FAILURE)

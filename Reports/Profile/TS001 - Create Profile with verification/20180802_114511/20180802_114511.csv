@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS001 - Create Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:45:13,2018-08-02 11:45:53,39.808s,FAILED
+,,,,,,
+Test Cases/Client Portal/Profile/TC001 - Create Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:45:13,2018-08-02 11:45:32,18.094s,PASSED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 11:45:14,2018-08-02 11:45:14,0.029s,PASSED
+"Statement - If (profileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:45:14,2018-08-02 11:45:14,0.005s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:45:14,2018-08-02 11:45:27,12.869s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:45:27,2018-08-02 11:45:32,4.535s,PASSED
+,,,,,,
+Test Cases/Client Portal/Profile/TC001 - Create Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:45:32,2018-08-02 11:45:38,6.628s,PASSED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 11:45:32,2018-08-02 11:45:32,0.001s,PASSED
+"Statement - If (profileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:45:32,2018-08-02 11:45:32,0.000s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:45:32,2018-08-02 11:45:34,2.347s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:45:34,2018-08-02 11:45:38,4.261s,PASSED
+,,,,,,
+Test Cases/Client Portal/Profile/TC001 - Create Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:45:38,2018-08-02 11:45:44,5.652s,FAILED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 11:45:38,2018-08-02 11:45:38,0.001s,PASSED
+"Statement - If (profileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:45:38,2018-08-02 11:45:38,0.001s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:45:38,2018-08-02 11:45:41,2.411s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:45:41,2018-08-02 11:45:44,3.222s,FAILED
+,,,,,,
+Test Cases/Client Portal/Profile/TC001 - Create Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:45:44,2018-08-02 11:45:48,4.549s,FAILED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 11:45:44,2018-08-02 11:45:44,0.001s,PASSED
+"Statement - If (profileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:45:44,2018-08-02 11:45:44,0.001s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:45:44,2018-08-02 11:45:48,4.518s,FAILED
+,,,,,,
+Test Cases/Client Portal/Profile/TC001 - Create Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:45:48,2018-08-02 11:45:53,4.459s,FAILED
+Statement - randomWords = CustomKeywords.randomWords.GenerateAction.randomString(5),Chrome 67.0.3396.99,,2018-08-02 11:45:48,2018-08-02 11:45:48,0.001s,PASSED
+"Statement - If (profileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:45:48,2018-08-02 11:45:48,0.001s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:45:48,2018-08-02 11:45:53,4.442s,FAILED

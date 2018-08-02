@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS001 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:23:10,2018-08-02 11:23:40,30.236s,ERROR
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:23:10,2018-08-02 11:23:33,22.412s,PASSED
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:23:11,2018-08-02 11:23:26,14.844s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:23:26,2018-08-02 11:23:26,0.000s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:23:26,2018-08-02 11:23:28,2.585s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:23:28,2018-08-02 11:23:33,4.490s,PASSED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:23:33,2018-08-02 11:23:39,6.501s,PASSED
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:23:33,2018-08-02 11:23:33,0.000s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:23:33,2018-08-02 11:23:33,0.001s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:23:33,2018-08-02 11:23:35,2.257s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 11:23:35,2018-08-02 11:23:39,4.216s,PASSED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:23:39,2018-08-02 11:23:39,0.033s,ERROR
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:23:39,2018-08-02 11:23:39,0.000s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:23:39,2018-08-02 11:23:39,0.001s,PASSED
+,,,,,,
+Test Cases/Client Portal/Profile/TC002 - Edit Profile with verification,Chrome 67.0.3396.99,,2018-08-02 11:23:39,2018-08-02 11:23:39,0.027s,ERROR
+Statement - If (moduleAccess == false),Chrome 67.0.3396.99,,2018-08-02 11:23:39,2018-08-02 11:23:39,0.000s,PASSED
+"Statement - If (newprofileName.trim() != """")",Chrome 67.0.3396.99,,2018-08-02 11:23:39,2018-08-02 11:23:39,0.002s,PASSED

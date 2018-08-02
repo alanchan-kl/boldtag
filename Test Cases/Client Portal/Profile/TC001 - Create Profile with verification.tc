@@ -31,7 +31,7 @@
       <description></description>
       <id>0f3778e3-a76a-46e7-b454-9eeb3941f3dc</id>
       <masked>false</masked>
-      <name>randomWord</name>
+      <name>randomWordAction</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
